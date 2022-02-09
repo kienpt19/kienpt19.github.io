@@ -15,6 +15,10 @@
     right: 30px;
 }
 
+.dog-head:hover {
+    transform: rotate(360deg);
+}
+
 /* div.dog-body {
   height: 300px;
   width: 214px;
@@ -50,6 +54,10 @@
     right: 35px;
     z-index: 100;
     cursor: pointer;
+}
+
+#backtop:active {
+    transform: rotate(180deg);
 }
 
 #backtop i {
@@ -124,6 +132,9 @@
         margin: 30px;
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+    .certification__slider img {
+        height: 160px;
     }
 
     /* hop tac */
@@ -547,7 +558,7 @@
         margin: 10px 0 15px;
     }
     .mechanism__content-title h1 {
-        font-size: 15px;
+        font-size: 16px;
     }
     .mechanism-item .item-statis {
         display: block;

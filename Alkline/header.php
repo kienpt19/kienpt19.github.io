@@ -7,7 +7,7 @@
             
             <a href="./index.php" class="logo" title="Trang chủ" > <img src="./theme/images/logo.png" alt=""> </a>
             <span><a href="./index.php"  title="Trang chủ">Alkaline Living</a></span>
-            <a href="#" class="logo-mobile"  title="Trang chủ"> <img src="./theme/images/logo-header.jpg" alt=""></a>
+            <a href="./index.php" class="logo-mobile"  title="Trang chủ"> <img src="./theme/images/logo-header.jpg" alt=""></a>
             <nav class="nav-bar">
                 <a href="./san_pham.php"  title="Sản phẩm">SẢN PHẨM</a>
                 <a href="./index.php"  title="Trang chủ">ALKALINE LIVING</a>
