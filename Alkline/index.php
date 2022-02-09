@@ -245,7 +245,7 @@
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                                <img src="../images/icon-static1.png" alt="icon">
+                            <img src="./theme/images/icon-static1.png" alt="icon">
                             </span>
                             <div class="brand-footer-text">
                                 <p class="number">9999+</p>
@@ -256,7 +256,7 @@
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                                <img src="../images/icon-static2.png" alt="icon">
+                            <img src="./theme/images/icon-static2.png" alt="icon">
                             </span>
                             <div class="brand-footer-text">
                                 <p class="number">63+</p>
@@ -267,8 +267,7 @@
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                                <img src="../images/icon-static3.png" alt="icon">
-                            </span>
+                            <img src="./theme/images/icon-static3.png" alt="icon">                            </span>
                             <div class="brand-footer-text">
                                 <p class="number">100%</p>
                                 <p class="title f-title">Tin tưởng của khách hàng</p>
