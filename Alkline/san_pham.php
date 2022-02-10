@@ -311,7 +311,7 @@
 
     <section class="purchase">
         <div class="container">
-            <div class="row">
+            <div class="row purchase__container">
                 <div class="col purchase__form wow fadeInLeft">
                     <h1>THông tin mua hàng</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>

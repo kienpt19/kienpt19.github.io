@@ -320,9 +320,25 @@
     .reason-item {
         display: block;
     }
+    .purchase__container {
+        display: block; 
+    }
     .purchase__img {
         display: flex;
         justify-content: center;
+    }
+    .purchase__img img {
+        margin-top: 20px;
+    }
+
+    .certification__slider img {
+        height: 220px;
+    }
+
+    /* hợp tác */
+
+    .registration__container {
+        display: block;
     }
 
     /*  thông báo */
@@ -436,6 +452,12 @@
 
         font-size: 26px;
         line-height: 35px;
+    }
+
+    .certification__slider img {
+        margin: auto;
+        width: 410px;
+        height: 300px;
     }
     
     .experts__video iframe {
