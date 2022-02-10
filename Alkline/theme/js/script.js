@@ -41,8 +41,17 @@ var swiper = new Swiper(".slider-customers", {
     spaceBetween: 20,
 
         },
+        1200: {
+            slidesPerView: 4,
+      spaceBetween: 20,
+  
+          },
         
       },
+      pagination: {
+        el: ".pagination-slider-customers",
+        clickable: true,
+    },
 });
 
 
