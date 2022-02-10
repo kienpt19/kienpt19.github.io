@@ -544,7 +544,7 @@
     }
 }
 
-@media(max-width:575px) {
+@media(max-width:575.90px) {
 
     .nav-bar {
         width: 75%;
@@ -552,7 +552,6 @@
     .nav-bar a {
         font-size: 12px;
     }
-
 
     .slider__text {
         top: 15px;
@@ -580,11 +579,11 @@
         line-height: 15px;
     }
     .research {
-        margin-top: 50px;
+        margin-top: 0;
     }
     .research-text h1 {
-        font-size: 18px;
-        line-height: 0;
+        font-size: 14px;
+        line-height: 22px;
     }
     .research-text h4 {
         font-size: 14px;
@@ -600,6 +599,7 @@
     }
     .balance__PH h1 {
         font-size: 13px;
+        line-height: 22px;
     }
     .balance__content p {
         font-size: 12px;
@@ -619,10 +619,12 @@
         font-size: 13px;
         line-height: 19px;
         padding-right: 50px;
+        max-width: 300px;
     }
     .method h1::after {
         width: 40px;
-        height: 40px;
+        height: 35px;
+        top: 0;
         right: 0;
     }
     .method p {
@@ -638,12 +640,13 @@
     }
     .mechanism__content-title h1 {
         font-size: 14px;
+        line-height: 22px;
     }
     .mechanism__content-title h1::after {
         display: none;
     }
     .mechanism-item .item-statis {
-        display: block;
+        display: flex;
     }
     .mechanism-item .item-statis .ct-text h3 {
         font-size: 14px;
@@ -654,11 +657,14 @@
     }
     .mechanism-item .item-statis .icon img{
         max-width: 100%;
-        display: flex;
-        margin: auto;
+        height: auto;
     }
     .brand-heading {
         font-size: 13px;
+    }
+    .brand-container h1 {
+        font-size: 14px;
+        line-height: 24px;
     }
     .slider-img {
         width: 155px;
@@ -797,7 +803,17 @@
 
 
 
-
+@media(max-width:399.90px) {
+    .mechanism-item .item-statis {
+        display: block;
+    }
+    .mechanism-item .item-statis .icon img {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        height: auto;
+    }
+}
 
 
 

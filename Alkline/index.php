@@ -158,8 +158,7 @@
 
     <section class="mechanism">
         <div class="container">
-            <div class="row">
-                <div class="mechanism-item">
+            <div class="row mechanism-item">
                     <div class="col wow fadeInLeft">
                         <div class="mechanism__content-title">
                             <h1>
@@ -206,16 +205,9 @@
 
     <section class="brand-container ">
         <div class="container">
-            <div class="row">
-                <div class="heading wow fadeInUp">
-                    <h1 class="brand-heading text-uppercase text-center">Kết quả của các bệnh nhân sử dụng</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="swiper-container slider-customers">
+                <h1 class=" text-uppercase text-center">Kết quả của các bệnh nhân sử dụng</h1>
+                <div class="swiper-container slider-customers wow fadeInUp">
                     <div class="swiper-wrapper ">
-                        
-    
                         <div class="swiper-slide brand__slider">
                                 <img src="./theme/images/tham-my-mui-1 1.png" alt="" class="slider-img  mx-auto d-block">
                            
@@ -234,18 +226,23 @@
                                 <a href="" class="btn slider-button d-block">Xem thêm</a>
                             </div>
                         </div>
-                        
-                        
+                        <div class="swiper-slide brand__slider">
+                            <img src="./theme/images/tham-my-mui-1 1.png" alt="" class="slider-img  mx-auto d-block">
+                            <div class="slider-backgroud">
+                                <h3 class=" text-center">Nguyên Thùy Linh</h3>
+                                <p class="slider-content-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac euismod eget odio tortor. </p>
+                                <a href="" class="btn slider-button d-block">Xem thêm</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="brand-pagination-slider__index"></div>
+                    <div class="pagination-slider-customers"></div>
                 </div>
-            </div>
             <div class="brand-footer wow fadeInUp">
                 <div class="row ">
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                            <img src="./theme/images/icon-static1.png" alt="icon">
+                                <img src="./theme/images/icon-static1.png" alt="icon">
                             </span>
                             <div class="brand-footer-text">
                                 <p class="number">9999+</p>
@@ -256,7 +253,7 @@
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                            <img src="./theme/images/icon-static2.png" alt="icon">
+                                <img src="./theme/images/icon-static2.png" alt="icon">
                             </span>
                             <div class="brand-footer-text">
                                 <p class="number">63+</p>
@@ -267,7 +264,8 @@
                     <div class="col-12 col-sm-4   ">
                         <div class="brand-footer-item cl-white">
                             <span class="icon">
-                            <img src="./theme/images/icon-static3.png" alt="icon">                            </span>
+                                <img src="./theme/images/icon-static3.png" alt="icon">
+                            </span>
                             <div class="brand-footer-text">
                                 <p class="number">100%</p>
                                 <p class="title f-title">Tin tưởng của khách hàng</p>
