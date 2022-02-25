@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Truck</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/css/animate.css">
+    <link rel="stylesheet" href="./theme/css/boostrap.min.css">
+    <link rel="stylesheet" href="./theme/css/reset.css">
+    <link rel="stylesheet" href="./theme/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+    <link rel="stylesheet" href="./theme/css/base.css">
+</head>
+<body>
+    <header class="menu header fixed">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./theme/images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 ps-4">
+                    <div>
+                        <div class="holine-search-header d-flex px-lg-3">
+                            <div class="form-search">
+                                <form action="Tim-kiem" class="d-flex" method="get">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <button class="btn-search" type="submit">
+                                        <img src="./theme/images/Search_alt_light.png" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                            <a href="tel:1900 1089" class="holine-header">
+                                <div class="icon me-2">
+                                    <img src="./theme/images/tel.png" alt="">
+                                </div>
+                                <div class="phone-number roboto">HOLINE:1900 1089</div>
+                            </a>
+                            
+                            <div id="menu-bar" class="fas fa-bars"></div>
+                            <div class="formclose" class="fas fa-bars"></div>
+                        </div>
+                        <div>
+                            <nav class="main-menu roboto">
+                                <ul>
+                                    <li>
+                                        <a href="./index.html">Trang chủ </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="./gioithieu.html">Về chúng tôi</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="./tin-tuc.html">Tin tức</a>
+                                        <ul>
+                                            <li>
+                                                <a href="">Tư vấn chọn xe</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Đánh giá , so sánh</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bảo hiểm xe</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kiến thức xe</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+    
+                                    <li>
+                                        <a href="./uudai.html">Ưu đãi</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="./tuyendung.html">Tuyển dụng </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="./lienhe.html">liên hệ</a>
+                                    </li>
+    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile roboto">
+            <div class="d-flex header-sp-menu justify-content-between align-items-center pl-3">
+                <div class="logo d-flex align-items-center">
+                    <a class="h-100 smooth" href="index.html" title="tech"> <img src="./theme/images/logo.png" alt="logo mobile"></a>
+                </div>
+                <div class="btn-close-menu-mobile cspoint hv-main px-2 py-1 fs-20">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" title="trang chủ">Trang chủ </a>
+                </li>
+
+                <li>
+                    <a href="./gioithieu.html">Về chúng tôi</a>
+                </li>
+
+                <li>
+                    <a href="./tintuc.html">Tin tức</a>
+                    <ul>
+                        <li>
+                            <a href="./ct-tintuc.html">Tư vấn chọn xe</a>
+                        </li>
+                        <li>
+                            <a href="">Đánh giá , so sánh</a>
+                        </li>
+                        <li>
+                            <a href="">Bảo hiểm xe</a>
+                        </li>
+                        <li>
+                            <a href="">Kiến thức xe</a>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-angle-right btn-drop-menu rotate"></i>
+                </li>
+
+                <li>
+                    <a href="./uudai.html">Ưu đãi</a>
+                </li>
+
+                <li>
+                    <a href="./tuyendung.html">Tuyển dụng </a>
+                </li>
+
+                <li>
+                    <a href="./lienhe.html">liên hệ</a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="select-all news-banner position-relative">
+            <div class="image">
+                <img class="w-100 height:auto" src="./theme/images/Rectangle 1.jpg" alt="">
+            </div>
+            <div class="content d-flex align-items-center ps-4 ps-lg-5">
+                <p class="all-title text-uppercase text-white ms-2 ms-xxl-5">Tin tức</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-all bg-white">
+            <ul class="product-details__navigation d-flex roboto">
+                <li >
+                    <a href="./index.html" class="position-relative">
+                        <i class="fa-solid fa-house-chimney"></i>
+                         Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="./ds-sanpham.html" class="position-relative ps-4 ps-xxl-4"> Tin tức </a>
+                </li>
+                <li>
+                    <a href="./gt-sanpham.html" class="positon-relative  ps-4 ps-xxl-4 hv-main"> Các chi nhánh VIMID phía Nam hoạt động bình thường, chủ động phòng, chống dịch Covid-19</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="section-all bg-white roboto">
+            <div class="row">
+                <div class="col-lg-7 col-xl-8">
+                    <h1 class="all-title text-black text-uppercase lh-13">Các chi nhánh VIMID phía Nam hoạt động bình thường, chủ động phòng, chống dịch Covid-19</h1>
+                    <div class="news-info d-flex justify-content-between align-items-center flex-wrap fs-14 border-bottom pb-1 mt-2 mt-xxl-3">
+                        <div class="d-flex flex-wrap mb-1">
+                            <div class="d-flex align-items-center me-4 me-xl-5">
+                                <i class="fa-solid fa-clock color-main"></i>
+                                <span class="ms-1"> 22/02/2022</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-clock color-main"></i>
+                                <span class="ms-1"> Nguồn:U-Truck</span>
+                            </div>
+                        </div>
+                        <div class="info-rating small-star mb-1">
+                            <div class="item-rating ">
+                                <p class="rating">
+                                    <span class="rating-box">
+                                        <i class="star fa fa-star" data-id="18" data-link="cac-loai-bao-hiem-xe-tai-xe-oto-bat-buoc-phai-co-khi-luu-thong" data-score="1"></i>
+                                        <i class="star fa fa-star" data-id="18" data-link="cac-loai-bao-hiem-xe-tai-xe-oto-bat-buoc-phai-co-khi-luu-thong" data-score="2"></i>
+                                        <i class="star fa fa-star" data-id="18" data-link="cac-loai-bao-hiem-xe-tai-xe-oto-bat-buoc-phai-co-khi-luu-thong" data-score="3"></i>
+                                        <i class="star fa fa-star" data-id="18" data-link="cac-loai-bao-hiem-xe-tai-xe-oto-bat-buoc-phai-co-khi-luu-thong" data-score="4"></i>
+                                        <i class="star fa fa-star" data-id="18" data-link="cac-loai-bao-hiem-xe-tai-xe-oto-bat-buoc-phai-co-khi-luu-thong" data-score="5"></i>
+                                    </span>
+                                </p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3 pb-2">
+                        <div class="info-rating d-flex align-items-center pt-2">
+                            <div class="items-rating ms-1 pt-1">
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                </span>
+                            </div>
+
+                            <p class="ms-1 pt-1">4.11/5  trong  5952 Đánh giá</p>
+                        </div>
+                        <div class="like-share pt-2">
+                            <a href="">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                Thích
+                            </a>
+                            <a href="" > chia sẻ</a>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="" class="d-block m-lg-3"> <img class="img-full" src="./theme/images/news-img (2).png" alt=""></a>
+                    </p>
+                   <!-- <div class="s-content position-relative mt-4"> -->
+                    <div class="formclose-news" class="fas fa-bars"></div>
+                    <div id="toc_container" class="no_bullets">
+                        <div class="toc-header">
+                            <span class="icon"><i class="fa fa-list-ul"></i></span>
+                            <span class="ms-2">Mục lục</span>
+                            <span class="toggle-content-toc"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </div>
+                        <ul class="toc_list roboto"> 
+                            <li>
+                                <a href="" class="fw-bold mb-3 hv-main">
+                                    <span class="fs-20"> những điều cần biết khi bị f0</span>
+                                </a>
+                                <ul >
+                                    <li><a href="">
+                                        <span class="fs-14 hv-main">cách trị nít mũi</span>
+                                    </a></li>
+                                    <li><a href="" class="hv-main"> sử dụng loại thuốc nào</a></li>
+                                    <li><a href="" class="hv-main"> xông nước gừng tranh xả sao cho đúng</a></li>
+                                    <li><a href="" class="hv-main"> không nên lạm dụng quá nhiều vào thuốc</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane active" id="content">
+                        <div class="s-content">
+                            <h2>
+                                <span style="font-size: 16px;">
+                                    <strong>Cabin V7G</strong>
+                                </span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    V7G là sự kết hợp mềm mại giữ cabin HW76 và CabinA7, vừa giữ được sự khỏe khoắn, bền bỉ của HOWO vừa mang phong cách hiện đại của HOWO A7.
+                                </li>
+                                <li>Mặt ga lăng đẹp và phong cách, với điểm nhấn logo,biểu tượng SINOTRUK.  </li>
+                                <li>Mặt ga lăng đẹp và phong cách.</li>
+                                <li>Nhìn phía trước có thể cảm nhận như một chiếc HOWO A7.</li>
+                                <li>Trang bị thùng ben chắc chắn với thép cao cường</li>
+                                <li>Sử dụng hệ thống tháp ben HYVA chất lượng</li>
+                                <li>Hệ thống xử lý khi thải UERO V</li>
+                                <li>Hệ thống chuỗi trạm hỗ trợ trên khắp cả nước</li>
+                            </ul>
+                            <h2 style="font-size: 16px;">Tóm tắt thông số kỹ thuật xe ben V7G 6x4 thùng vuông</h2>
+                            <ul >
+                                <li>MODEL: ZZ3257N3447E1</li>
+                                <li>Hộp số HW19712 - 12 số tiến 2 số lùi</li>
+                                <li>Động cơ D10.38-50. Dung tích động cơ 9,726 lít, công suất 380 hp</li>
+                                <li>Cầu dầu 16 tấn, cầu đúc</li>
+                                <li>Nhíp lá bó, nhíp trước 10 lá, nhíp sau 12 lá quang nhíp đôi.</li>
+                                <li>Thùng ben ( D x R x C ): 5 x 2.3 x 0.65m</li>
+                            </ul>
+                            <h2>Nguyên Lý hoạt động của SCR xe ben V7G 6x4 thùng vuông</h2>
+                            <ul>
+                                <li>Cảm biến nhiệt độ và cảm biến Nox sẽ truyền dữ liệu tới ECU.</li>
+                                <li>ECU xử lý và điều khiển kim phun Nox phun DEF vào cổ xả theo các tin hiệu.</li>
+                                <li>DEF tạo áp phun thông qua 1 bơm DEF lấy DEF từ bình chứa và bơm đến kim phun.</li>
+                                <li>Dung dịch xử lý khí thải được phun vào cổ xả ở nhiệt độ khoảng 400- 500 độ và tạo ra phản ứng hóa học.</li>
+                                <li>Kết quả từ Nox tạo ra Ni tơ và nước vô hại giúp làm giảm lượng Nox trong khí thải</li>
+                            </ul>
+                            <h2> Thùng nhiên liệu DEF (Bình URE) lắp trên xe ben V7G</h2>
+                            <ul>
+                                <li>Dung tích: khoảng 35 lít</li>
+                                <li>Tiêu hao DEF: 2-5% nhiên liệu</li>
+                                <li>DEF là hỗn hợp của 32,5% Ure, 67% là nước cất và một số phụ gia khác.</li>
+                                <li>Dung dịch này hiện Việt Nam đã sản xuất và sắp tới sẽ có mặt tại các cây xăng dầu. Giá thành tương đương giá xăng. Hiện tại mua số lượng nhiều chỉ còn khoảng 17.000đ/lít.</li>
+                                <li>Một điểm khách biệt rất lớn đến từ động cơ D10.38-50 đó là động cơ có van EVB, giúp động cơ chạy thoát máy hơn, khỏe hơn, ổn định hơn.</li>
+                                <li>Khi chạy đèo dốc không còn nỗi lo gẫy xupap khi đóng cúp bô trong thời gian dài.</li>
+                            </ul>
+                            <h2>Hộp số xe ben V7G 6x4 thùng vuông</h2>
+                            <ul>
+                                <li>Mô-men xoắn chịu tải lên tới 19000N</li>
+                                <li>Hộp số HW19712 có thể hoạt động ổn định trên 5 năm so với 2-3 của hộp số HW13710/ HW1971</li>
+                                <li>HW19712 có tỷ số truyền lớn (i1=15.01) tương đương với các hộp số 16 số trên thị trường.</li>
+                            </ul>
+                            <h2>Hệ thống thủy lực xe ben V7G 6x4 thùng vuông</h2>             
+                            <ul>
+                                <li>Hệ thống thủy lực là vô cùng quan trọng đối với một chiếc xe ben, nó quyết định tới hoạt động, tính an toàn vàhiệu quả sử dụng của khách hàng.</li>
+                                <li>Để đảm bảo tuyệt đối VIMID sử dụng thùng dầu thủy lực, van chia dầu, bơm dầu và tháp ben HYVA. Thương hiệu HYVA đã được chứng minh với sự ổn định qua hàngthập kỷ sử dụng tại Việt Nam.</li>
+                            </ul>
+                        </div>
+                        <div class="tags align-items-center d-flex flex-wrap mb-3 mt-4 mt-xxl-5">
+                            <span class="me-lg-3"> Tags:</span>
+                            <a href="" class="black-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 "> Xe Ben</a>
+                            <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Tổ chức</a>
+                            <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Xe trộn bê tông</a>
+                            <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Phụ tùng</a>
+                            <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> U-Truck</a>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between border-bottom mb-3 pb-2">
+                            <div class="info-rating">
+                                <div class="items-rating">
+                                    <span class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </span>
+                                </div>
+                                <p class="mt-2 mb-1">Đánh giá bài viết</p>
+                            </div>
+                            <div class="like-share">
+                                <a href="">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    Thích
+                                </a>
+                                <a href="" > share</a>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="d-flex justify-content-between mb-2 border-bottom pb-3">
+                                <div class="number-comment">
+                                    <p>0 Bình luận</p>
+                                </div>
+                                <div class="filter-comment">
+                                    <span>Sắp xếp theo</span>
+                                    <select name="sapxep" id="">
+                                        <option value="0"> Mới nhất</option>
+                                        <option value="1"> cũ nhất</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="write-comment d-flex align-items-center pb-3 border-bottom">
+                                <div class="img-comment me-md-3 mt-md-2 me-lg-3 mt-xl-2">
+                                    <img src="./theme/images/fb.png" alt="">
+                                </div>
+                                <textarea name="comment" id=""  placeholder="Thêm bình luận..."></textarea>
+                            </div>
+                            <div class="plugin d-flex mt-4 align-items-center">
+                                <img class="me-lg-2 w-15" src="./theme/images/fb.png" alt="">
+                                <p style="color: #1877F2;">plugin bình luận trên facebook</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-4">
+                    <div class="title-side-bar__news mb-3">
+                        <span class="d-inline-block fs-22 fw-bold pb-2 text-uppercase roboto"> tin nổi bật</span>
+                    </div>
+                    <div class="list-news-sidebar">
+                        <div class="item-news-sidebar d-flex">
+                            <div class="img">
+                                <a href="" class="c-img">
+                                    <img src="./theme/images/img-ngoaithat3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="name text-uppercase fw-500">
+                                    <a href="" class="fs-16 roboto lh-22 "> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                </div>
+                                <div class="time-news d-flex align-items-center mt-2"> 
+                                    <i class="fa fa-clock"></i> 
+                                    <span class="fs-14 ms-2">22/02/2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-news-sidebar d-flex">
+                            <div class="img">
+                                <a href="" class="c-img">
+                                    <img src="./theme/images/img-ngoaithat3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="name text-uppercase fw-500">
+                                    <a href="" class="fs-16 roboto lh-22 "> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                </div>
+                                <div class="time-news d-flex align-items-center mt-2"> 
+                                    <i class="fa fa-clock"></i> 
+                                    <span class="fs-14 ms-2">22/02/2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-news-sidebar d-flex">
+                            <div class="img">
+                                <a href="" class="c-img">
+                                    <img src="./theme/images/img-ngoaithat3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="name text-uppercase fw-500">
+                                    <a href="" class="fs-16 roboto lh-22 "> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                </div>
+                                <div class="time-news d-flex align-items-center mt-2"> 
+                                    <i class="fa fa-clock"></i> 
+                                    <span class="fs-14 ms-2">22/02/2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-news-sidebar d-flex">
+                            <div class="img">
+                                <a href="" class="c-img">
+                                    <img src="./theme/images/img-ngoaithat3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="name text-uppercase fw-500">
+                                    <a href="" class="fs-16 roboto lh-22"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                </div>
+                                <div class="time-news d-flex align-items-center mt-2"> 
+                                    <i class="fa fa-clock"></i> 
+                                    <span class="fs-14 ms-2">22/02/2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="line-box-news"></div>
+    </section>
+
+    <section class="container">
+        <div class="related-products section-all bg-gray">
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 mb-xxl-3 roboto">
+                <p class="all-title roboto">
+                    <a href="#" class=" title-section color-black"> Tin tương tự </a>
+                </p>
+                <a href="#" class="roboto text-uppercase fs-16 fw-bold"> Xem thêm >></a>
+            </div>
+            <div class="position-relative ">
+                <div class="formclosenotification" class="fas fa-bars"></div>
+                <div class="swiper-container slider-related-products ">
+                    <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <div class="item-related-products">
+                            <div class="img position-relative">
+                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                    <img src="./theme/images/Rectangle 10 (1).png" alt="">
+                                </a>
+                                <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
+                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-related-products">
+                            <div class="img position-relative">
+                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                    <img src="./theme/images/Rectangle 10-6.png" alt="">
+                                </a>
+                                <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
+                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-related-products">
+                            <div class="img position-relative">
+                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                    <img src="./theme/images/Rectangle 10-1.png" alt="">
+                                </a>
+                                <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
+                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-related-products">
+                            <div class="img position-relative">
+                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                    <img src="./theme/images/Rectangle 10-6.png" alt="">
+                                </a>
+                                <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
+                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-related-products">
+                            <div class="img position-relative">
+                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                    <img src="./theme/images/Rectangle 10-6.png" alt="">
+                                </a>
+                                <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
+                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+                    <!-- <div class="swiper-button-next">
+                        <i class="fa-solid fa-circle-caret-right "></i>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>+ -->
+                </div>
+                <div class="slider-controls main">
+                    <div class="slide-video-product-prev prev-btn">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </div>
+                    <div class="slide-video-product-next next-btn">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container">
+        <div class="line-box-main"></div>
+    </section>
+
+    <footer class="footer container">
+        <div class="footer__content bg-gray ">
+            <div class="row gx-0">
+                <div class="col-6 col-xl-3 item-col px-3 px-md-4 px-xxl-5 py-3 py-lg-4 py-xxl-5">
+                    <ul class="footer__content-item">
+                        <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >Tải app U-TRUCK</h5></li>
+                        <li>
+                            <ul class="download-app d-flex flex-wrap justify-content-xxl-between app-info-box roboto">
+                                <li class="qr text-center">
+                                    <a href="#">
+                                        <img src="./theme/images/QR.png" alt="Quét mã QR">
+                                    </a>
+                                    <p class="fs-12 mt-1">hướng dẫn cài app</p>
+                                </li>
+                                <li class="list-app ms-3 ">
+                                    <a href="#" class="mb-4">
+                                        <img class="mb-4" src="./theme/images/app-store.png" alt="">
+                                    </a>
+                                    <a href="#" class="mb-4"> 
+                                        <img src="./theme/images/ch-play.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="col-6 col-xl-3 item-col px-3 px-md-4 px-xxl-5 py-3 py-lg-4 py-xxl-5 roboto">
+                    <ul class="footer__content-item">
+                        <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >về u-truck</h5></li>
+                        <div class="footer-list">
+                        <li><a href="">Giới thiệu công ty</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Góp ý, khiếu nại</a></li>
+                        <li><a href="">Hệ thống chuỗi trạm</a></li>
+                        </div>
+                    </ul>
+                    
+                </div>
+                <div class="col-6 col-xl-3 item-col px-3 px-md-4 px-xxl-5 py-3 py-lg-4 py-xxl-5 roboto">
+                    <ul class="footer__content-item">
+                        <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >tổng đài hỗ trợ</h5></li>
+                        <div class="footer-list">
+                            <li><a href="#"> Mua xe: 1900 1089 </a></li>
+                            <li><a href="#">Mua phụ tùng: 1900 1089</a></li>
+                            <li><a href="#">Kỹ thuật: 1900 1089</a></li>
+                            <li><a href="#">CSKH: 1900 1089</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-6 col-xl-3 item-col px-3 px-md-4 px-xxl-5 py-3 py-lg-4 py-xxl-5">
+                    <ul class="footer__content-item">
+                        <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >kết nối</h5></li>
+                        <li >
+                            <a class="ms-2 footer__content-icon " href="facebook.com"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
+                            <a class="ms-2 footer__content-icon " href="zalo.com"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
+                            <a class="ms-2 footer__content-icon " href="tiktok.com"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
+                            <a class="ms-2 footer__content-icon " href="youtobe.com"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom text-center roboto">
+            <p class="text__p fs-16 lh-24">Coppyright © 2022 U-truck All Rights Reserved. Công ty cổ phần đầu tư phát triển máy Việt Nam VIMID. GPDKKD: 0303217354 do sở KH & ĐT TP.HN cấp ngày 02/01/2012.
+                <br>
+                Địa chỉ: BT7- 01 KĐT An Hưng, Hà Đông, Hà Nội. Điện thoại: 1900 089. Email cskh@u-truck.vn
+            </p>
+        </div>
+    </footer>
+
+    <div class="list-social-fix">
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="facebook"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="zalo"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
+    </div>
+
+    <div id="backtop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./theme/js/jquery-3.4.1.min.js"></script>
+    <script src="./theme/js/swiper-bundle.min.js"></script>
+    <script src="./theme/js/wow.min.js"></script>
+    <script src="./theme/js/script.js"></script>
+</body>
+</html>
