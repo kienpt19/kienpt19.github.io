@@ -6,6 +6,9 @@ body {
     background: #EEF3F6;
 }
 
+.color-main {
+    color: #B11116 !important;
+}
 
 button {
     border: none;
