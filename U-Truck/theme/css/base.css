@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-
+/* thanh cuộn */
+::-webkit-scrollbar {
+    width: 8px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B11116; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.2); 
+}
+/*  thanh cuộn ends */
 
 body {
     background: #EEF3F6;
@@ -724,6 +738,13 @@ a:hover {
         font-size: 14px;
     }
 
+    .product-details__navigation-news li:last-child {
+        padding-top: 0.5rem;
+    }
+    .product-details__navigation-news li:last-child a {
+        padding-left: 0 !important;
+
+    }
     
 
 }
