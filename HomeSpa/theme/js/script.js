@@ -200,50 +200,84 @@ var swiper = new Swiper(".slide-testimonial__index", {
 
 $(document).ready(function(){
     $('.leader-text-icon').click(function(){
+        // $('.leader-text').addClass('active');
+        if( $($(this).parent('.leader-text'))){
+            $(this).addClass('active');
+        }
+        // console.log(($(this)))
+    })
+    // $('.leader-text-icon').click(function(){ 
+    //     if( $($(this).parent('.leader-text'))){
+    //         $(this).addClass('active');
+    //         $(this).parent('.leader-text').slideUp(300);
+    //     }
+    //     else{
+    //         $(this).removeClass('active');
+    //         $(this).parent('.leader-text').slideDown(300);
+    //     };
+    // });
+    $('.leader-text-icon').click(function(){
         $('.leader-text').addClass('active');
+    })
+    $('.leader-down').click(function(){
+        $('.leader-text').removeClass('active');
+        $
     })
     
 });
 
 
+var swiper = new Swiper(".certificate-slide__introduce",{
+        slidesPerView: 4,
+        loop: false,
+        disableOnInteraction: true,
+        speed: 600,
+        spaceBetween: 37,
+         loop: false,
+        centeredSlides: true,
+        disableOnInteraction: false,
+        loop: true,
+        effect: 'coverflow',
 
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".pagination-certification",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
+            },
+            576: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 37
+            },
+        },
+        pagination: {
+            el: ".pagination-slide-introduce",
+        },
 
-var swiper = new Swiper(".certificate-slide__introduce", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "3",
-    loop: true,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-      breakpoints: {
-        280: {
-            slidesPerView: 1
-        },
-        575: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 1
-        },
-        991: {
-            slidesPerView: 3,
-            spaceBetween: 15
-        },
-        1200: {
-            slidesPerView: 5,
-            spaceBetween: 24
-        }
-    },
-    },
-    pagination: {
-      el: ".pagination-slide-introduce",
-    },
-  });
+    });
+
 
   $(document).ready(function(){
     $('#menu-bar').click(function(){
@@ -269,6 +303,11 @@ var swiper = new Swiper(".certificate-slide__introduce", {
         };
     });
 });
+
+var swiper = new Swiper(".album-images-slide", {
+    watchSlidesProgress: true,
+    slidesPerView: 5,
+  });
 
 
 $(document).ready(function(){
@@ -323,3 +362,5 @@ var swiper = new Swiper(".Featured-event-news__index", {
       clickable: true,
     },
   });
+
+ 

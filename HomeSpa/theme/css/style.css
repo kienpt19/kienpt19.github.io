@@ -302,23 +302,34 @@
 }
 
 .item-service .content {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
     position: absolute;
-    display: none;
     top: -100%;
     left: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    z-index: 1;
     text-align: center;
     background: linear-gradient(94.09deg, rgba(0, 184, 148, 0.8) 0%, rgba(0, 129, 73, 0.8) 100%);
-    padding: 2rem;
-    padding-top: 6rem;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    pointer-events: none;
+
 }
 .service .item-service:hover .content {
     top: 0;
-    display: block;
-    transition: all 0.5s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.item-service .content img {
+    padding-top: 30px;
 }
 
 .item-service .content h3 {
@@ -459,7 +470,7 @@
 
 .form-logup__content {
     position: relative;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     height: auto;
     background-color: #fff;
     border: 2px solid #008149;
@@ -468,7 +479,7 @@
     margin: 100px 70px;
 }
 
-.form-logup__content::after {
+.form-logup__content::before {
     position: absolute;
     content: "";
     background-image: url(../images/5a293dcfbafd34\ 1.png);
@@ -477,10 +488,10 @@
     width: 352px;
     height: 250px;
     top: -90px;
-    right: -80px;
+    right: -55px;
 }
 
-.form-logup__content::before {
+.form-logup__content::after {
     position: absolute;
     content: "";
     background-image: url(../images/5a293dcfbafd34\ 2.png);
@@ -725,7 +736,7 @@
     position: relative;
     z-index: 1;
     padding-top: 4.6875rem;
-    padding-bottom: 6.6875rem;
+    /* padding-bottom: 6.6875rem; */
 }
 
 .content-introduce .vision-content {
@@ -737,18 +748,18 @@
 }
 .vision-content-left h2::after  {
     content: "";
-    width: 60%;
+    width: 48%;
     height: 1px;
     background: #318D47;
     position: absolute;
     bottom: 40%;
-    left: 69%;
+    left: 75%;
     z-index: 1;
     transform: translateX(-50%);
 }
 .mission-content-right h2::before{
     content: "";
-    width: 60%;
+    width: 62%;
     height: 1px;
     background: #318D47;
     position: absolute;
@@ -808,22 +819,9 @@
     border-radius: 50%;
 }
 
-/* .leader-text h2::after{
-    content: "";
-    width: 50%;
-    height: 1px;
-    background: #318D47;
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    z-index: 1;
-    transform: translateX(-50%);
-} */
-
 .slide-leader__index .slider-leader .leader-text {
     position: absolute;
     top: 390px;
-    left: 0;
     height: auto;
     width: 100%;
     text-align: center;
@@ -834,17 +832,23 @@
     background-size: 100% 100%;
     transition: all 0.8s;
 }
-.slider-leader {
-    overflow: hidden;
-    border-radius: 10px;
+
+.slide-leader__index .slider-leader .leader-text:hover {
+    top: 255px;
 }
 
 .slide-leader__index .slider-leader .leader-text.active{
     top: 255px;
 }
 
+.slider-leader {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .album-images-items:hover .album-img-hov {
     display: flex;
+    color: #fff;
 }
 
 .album-img-hov {
@@ -857,15 +861,18 @@
     height: 100%;
     width: 100%;
     font-size: 30px;
+    transition: all 0.5s ease-in-out;
     display: none;
 }
 
-.service-skin-care {
-    background-image: url(../images/Vector.png);
+.content-service {
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: auto;
+    background-size: 100% 100%;
+}
+
+.content-service .col-lg-5 img {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 
@@ -899,6 +906,9 @@
 
 .branch-system .branch-system-list {
     background-color: #F2F9F6;
+}
+.branch-system .branch-system-list:hover{
+    cursor: pointer;
 }
 .branch-system-list.active h3,
 .branch-system-list.active {
@@ -1190,4 +1200,35 @@
 
 .share-experiences {
     background: #E0EEEE !important;
+}
+
+/*  news */
+
+.news-pagination span a {
+    padding: 5px;
+}
+
+.news-pagination span a:hover {
+    background-color: var(--bg-color-main);
+    color: #FFF;
+}
+
+.news-event-site-bar {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.news-event-site-bar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.news-event-site-bar .news-event-site-bar-text h3 {
+    overflow: hidden;
+    /* display: block; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
 }
