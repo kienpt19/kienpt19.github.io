@@ -2,15 +2,12 @@
 
 
 .header-section {
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    z-index: 2;
     background-color: var(--bg-color-main);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+
 
 .search-logo-holine {
     padding-top: 30px;
