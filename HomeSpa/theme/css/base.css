@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+@font-face {
+    font-family: "Kenoky";
+    src: url("../fonts/KENOKY Normal.ttf") format("truetype");
+    font-display: swap;
+}
 
+.font-kenoky {
+    font-family: "Kenoky", sans-serif;
+}
 
 :root {
     --bg-color-main: #008C4F;
@@ -406,9 +414,9 @@
     .fs-24 {
         font-size: 22px;
     }
-    /* .slide-leader__index .slider-leader .leader-text {
-        padding-top: 30px; 
-    } */
+    .slide-leader__index .slider-leader .leader-text {
+        padding-top:50px;
+    }
 
     
 
@@ -466,6 +474,9 @@
     }
     .slider-testimonial .next-btn {
         right: 7%;
+    }
+    .slide-leader__index .slider-leader .leader-text {
+        padding-top: 50px;
     }
     
 
@@ -527,4 +538,14 @@
     .navigation-introduce p:nth-child(2) {
         font-size: 10px;
     }
+    .slide-leader__index .slider-leader .leader-text {
+        padding-top: 35px;
+    }
+    .slide-leader__index .slider-leader .leader-text.active {
+        top: 35%;
+    }
+    .slide-leader__index .slider-leader .leader-text {
+        top: 73%;
+    }
+    
 }

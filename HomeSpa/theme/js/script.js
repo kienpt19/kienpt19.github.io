@@ -165,6 +165,25 @@ var swiper = new Swiper(".slide-testimonial__index", {
         wow.init();
     }
   });
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {  //nếu thanh cuộn #0
+            $('.footer-head').fadeIn();
+        }
+        else{
+            $('.footer-head').fadeOut();
+        }
+    });
+    $(".footer-head").click(function(){   //event click backtop
+            $('html,body').animate({scrollTop: 0
+        }, 500);  // trả về 0 time 1s
+    })
+    var _width = $(window).width();
+    if (_width > 991) {
+        wow = new WOW();
+        wow.init();
+    }
+  });
 
   var swiper = new Swiper(".slide-leader__index", {
     slidesPerView: 5,
@@ -178,7 +197,7 @@ var swiper = new Swiper(".slide-testimonial__index", {
             slidesPerView: 1
         },
         575: {
-            slidesPerView: 1
+            slidesPerView: 1.5
         },
         768: {
             slidesPerView: 2
@@ -199,31 +218,29 @@ var swiper = new Swiper(".slide-testimonial__index", {
   });
 
 $(document).ready(function(){
-    $('.leader-text-icon').click(function(){
-        // $('.leader-text').addClass('active');
+    // function.preventDefault();
+    
+
+    // $('.leader-text-icon').click(function(){
+    //     // $('.leader-text').addClass('active');
+    //     if( $($(this).parent('.leader-text'))){
+    //         $(this).addClass('active');
+    //     }
+        // console.log(($(this)))
+    // })
+    $('.leader-text-icon').click(function(){ 
         if( $($(this).parent('.leader-text'))){
             $(this).addClass('active');
         }
-        // console.log(($(this)))
-    })
-    // $('.leader-text-icon').click(function(){ 
-    //     if( $($(this).parent('.leader-text'))){
-    //         $(this).addClass('active');
-    //         $(this).parent('.leader-text').slideUp(300);
-    //     }
-    //     else{
-    //         $(this).removeClass('active');
-    //         $(this).parent('.leader-text').slideDown(300);
-    //     };
-    // });
-    $('.leader-text-icon').click(function(){
-        $('.leader-text').addClass('active');
-    })
-    $('.leader-down').click(function(){
-        $('.leader-text').removeClass('active');
-        $
-    })
-    
+        else{
+            $(this).removeClass('active');
+        };
+    });
+    // $('.leader-text-icon').click(function(){
+
+    //     $('.leader-text').addClass('active');
+        
+    // })
 });
 
 
@@ -307,6 +324,8 @@ var swiper = new Swiper(".certificate-slide__introduce",{
 var swiper = new Swiper(".album-images-slide", {
     watchSlidesProgress: true,
     slidesPerView: 5,
+    
+    
   });
 
 
