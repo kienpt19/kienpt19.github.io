@@ -491,7 +491,7 @@
         top: 15%;
     }
     .slider-testimonial .next-btn {
-        right: 3%;
+        right: 7%;
     }
     .slide-leader__index .slider-leader .leader-text {
         padding-top: 50px;
@@ -509,6 +509,9 @@
     }
     .slider-banner__text-left {
         top: 10%;
+    }
+    .slider-testimonial .next-btn {
+        right: 5%;
     }
 }
 @media(max-width:575.90px){
@@ -548,6 +551,9 @@
     .slider-testimonial .prev-btn, .slider-testimonial .next-btn {
         top: 15%;
         font-size: 16px;
+    }
+    .slider-testimonial .next-btn {
+        right: 3%;
     }
 
     .service-introduce-list-icons::after {
