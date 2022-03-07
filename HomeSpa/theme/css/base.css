@@ -6,23 +6,6 @@
     font-display: swap;
 }
 
-/* thanh cuộn */
-::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 10px;
-}
-   
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--bg-color-main); 
-    border-radius: 10px;
-}
-  
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    transform: scale(1.2); 
-}
-/*  thanh cuộn ends */
 
 .font-kenoky {
     font-family: "Kenoky", sans-serif;
@@ -156,20 +139,24 @@
 }
 
 .all-title {
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 600;
-    color: var(--bg-color-main);
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    background: linear-gradient(to right,#00B894,#008149);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {
     position: relative;
     padding: 10px 30px;
     border-radius: 10px 0px;
+    border: none;
     color: #FFF;
     background: linear-gradient(94.09deg, #00B894 0%, #008149 100%);
     display: inline-block;
-    font-size: 18px;    
+    font-size: 16px;    
+    font-weight: 600;
     transition: all 0.2s ease-in-out;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -231,6 +218,27 @@
     color: #008C4F;
     transition: all 0.3s ease-in-out;
 }
+.slide-testimonial__index .swiper-slide:nth-child(2n+1) .item-feedback .image {
+    margin-bottom: 2.1875rem;
+}
+
+.item-feedback .image {
+    position: relative;
+}
+.item-feedback .image .img {
+    padding-top: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.c-img {
+    position: relative;
+}
+.img__ {
+    position: relative;
+    overflow: hidden;
+}
+
+
 
 #backtop {
     width: 40px;
@@ -397,9 +405,9 @@
     .slider-banner__text-right {
         right: 0;
     }
-    /* .slide-leader__index .slider-leader .leader-text:hover {
-        top: 180px;
-    } */
+    .fs-20 {
+        font-size: 18px;
+    }
 
 }
 @media(max-width:1199.90px){
@@ -418,8 +426,8 @@
     }
 
     .all-title {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 36px;
     }
 
     .slider-banner__text-right {
@@ -433,13 +441,38 @@
         font-size: 22px;
     }
     .slide-leader__index .slider-leader .leader-text {
-        padding-top:50px;
+        padding-top:63px;
     }
+    .vision-left-items,
+.mission-right-items,
+.vision-left-items {
+    font-size: 12px;
+    line-height: 20px;
+}
 
     
 
 }
 @media(max-width:991.90px){
+    .fs-36 {
+        font-size: 30px;
+    }
+    .fs-26 {
+        font-size: 20px;
+    }
+    .fs-22 {
+        font-size: 16px;
+    }
+    .fs-20 {
+        font-size: 16px;
+    }
+    .mh-150 {
+        min-height: 250px;
+    }
+    .all-title {
+        font-size: 26px;
+        line-height: 26px;
+    }
     #menu-bar {
         display: block;
     }
@@ -496,10 +529,42 @@
     .slide-leader__index .slider-leader .leader-text {
         padding-top: 50px;
     }
+    .mission-content-right .mission-right-items,
+    .vision-content-left .vision-left-items {
+         font-size: 12px;
+         line-height: 20px;
+     }
+
+    .content-introduce {
+         padding-top: 0;
+     }
+
+    .footer-text-title p {
+         font-size: 14px;
+     }
+    .all-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .slider-banner__text-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .slider-banner__text-left p {
+        font-size: 14px;
+        line-height: 22px;
+    }
     
 
 }
 @media(max-width:767.90px){
+    .fs-16 {
+        font-size: 14px;
+    }
+    .all-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
     .slider-banner__text-left p {
         margin-bottom: 0;
     }
@@ -513,8 +578,27 @@
     .slider-testimonial .next-btn {
         right: 5%;
     }
+
 }
 @media(max-width:575.90px){
+    .fs-24 {
+        font-size: 20px;
+    }
+    .fs-36 {
+        font-size: 24px;
+    }
+    .lh-40 {
+        line-height: 28px;
+    }
+    .fs-16 {
+        font-size: 12px;
+    }
+    .fs-14 {
+        font-size: 12px;
+    }
+    .mh-150 {
+        min-height: 200px;
+    }
     .slider-banner__text-left h2 {
         font-size: 16px;
         line-height: 22px;
@@ -535,7 +619,7 @@
         left: 75%;
     }
     .all-title {
-        font-size: 25px;
+        font-size: 24px;
         line-height: 30px;
     }
     .ps-100 {
@@ -570,6 +654,9 @@
     }
     .slide-leader__index .slider-leader .leader-text {
         top: 73%;
+    }
+    .footer-contact {
+        padding-bottom: 20px;
     }
     
 }
