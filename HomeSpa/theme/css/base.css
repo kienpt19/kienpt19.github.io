@@ -6,6 +6,24 @@
     font-display: swap;
 }
 
+/* thanh cuộn */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color-main); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.2); 
+}
+/*  thanh cuộn ends */
+
 .font-kenoky {
     font-family: "Kenoky", sans-serif;
 }
