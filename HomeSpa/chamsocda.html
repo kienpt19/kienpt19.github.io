@@ -22,7 +22,7 @@
                         <div id="search">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm điều gì đó...">
                                     <button class="btn-search" type="submit">
                                         <img src="./theme/images/search.png" alt="search">
                                     </button>
@@ -60,9 +60,36 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mobile d-block d-lg-none">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo-mobile">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="form-search__mobile d-flex align-items-center justify-content-center">
+                            <span class="btn-close-search">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <form action="" class="form-search-content" method="get">
+                                <input type="text" value id="input-search-header" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                                <button class="btn-search" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <span class="button-mobile-header show-search__mobile">
+                            <img class="img-fluid" src="./theme/images/Group 14.png" alt="icon search">
+                        </span>
+                        <span  class="button-mobile-header show-menu__mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="formclose" class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
             <div class="line-box w-100"></div>
             <div class="menu pb-4 text-white font-montserrat">
-                <ul class="d-flex justify-content-between fs-20 text-uppercase fw-500">
+                <ul class="d-flex justify-content-between text-uppercase fw-500">
                     <li>
                         <a href="./index.html" title="Trang chủ">Trang chủ</a>
                     </li>
@@ -252,11 +279,11 @@
                 <div class="container">
                     <div class="navigation-introduce font-montserrat">
                         <p class="pb-1 color-primary all-title font-kenoky wow fadeInUp" data-wow-delay="0.2s">Dịch vụ chăm sóc da</p>
-                        <p>
+                        <p class="fs-14">
                             <a class="me-2 wow fadeInUp"  data-wow-delay="0.2s" href="./index.html">
                                 Trang chủ
                             </a>
-                            <i class="fa-solid fa-angles-right wow fadeInUp"  data-wow-delay="0.4s"></i>
+                            <i class="fa-solid fa-angles-right wow fadeInUp fs-12"  data-wow-delay="0.4s"></i>
                             <a class="me-2 wow fadeInUp"  data-wow-delay="0.6s" href="./index.html">
                                &nbsp; Dịch vụ
                             </a>
@@ -285,21 +312,21 @@
     </secton>
     <section class="container">
         <div class="row text-center font-montserrat mt-4">
-            <div class="col-lg-3 col-sm-6 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.2S">
-                <h3 class="all-title mx-4">05</h3>
-                <p class="fs-16 mb-3">Năm kinh nghiệm</p>
+            <div class="col col-6 col-sm-3 mb-2 mb-sm-0 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.2S">
+                <h3 class="all-title mx-4 font-kenoky">05</h3>
+                <p class="fs-16 mb-3 fw-600">Năm kinh nghiệm</p>
             </div>
-            <div class="col-lg-3 col-sm-6 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.4S">
-                <h3 class="all-title mx-4">80</h3>
-                <p class="fs-16 mb-3">Chuyên viên tận tình</p>
+            <div class="col col-6 col-sm-3 mb-2 mb-sm-0 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.4S">
+                <h3 class="all-title mx-4 font-kenoky">80</h3>
+                <p class="fs-16 mb-3 fw-600">Chuyên viên tận tình</p>
             </div>
-            <div class="col-lg-3 col-sm-6 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.6S">
-                <h3 class="all-title mx-4">24</h3>
-                <p class="fs-16 mb-3">Tỉnh thành toàn quốc</p>
+            <div class="col col-6 col-sm-3 mb-2 mb-sm-0 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.6S">
+                <h3 class="all-title mx-4 font-kenoky">24</h3>
+                <p class="fs-16 mb-3 fw-600">Tỉnh thành toàn quốc</p>
             </div>
-            <div class="col-lg-3 col-sm-6 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.8S">
-                <h3 class="all-title mx-4">100%</h3>
-                <p class="fs-16 mb-3">Khách hàng hài lòng</p>
+            <div class="col col-6 col-sm-3 mb-2 mb-sm-0 service-introduce-list-icons wow fadeInUp" data-wow-delay="0.8S">
+                <h3 class="all-title mx-4 font-kenoky">100%</h3>
+                <p class="fs-16 mb-3 fw-600">Khách hàng hài lòng</p>
             </div>
         </div>
     </section>
@@ -510,19 +537,20 @@
             </div>
         </div>
     </section>
-    <section class="new-event">
-        <div class="container section-all font-montserrat">
+    
+    <section class="new-event section-all">
+        <div class="container  font-montserrat">
             <div class="new-event-title">
-                <p class="text-uppercase color-title text-center fs-18 mb-3 fw-600 font-montserrat mt-4 wow fadeInDown">news & events</p>
+                <p class="text-uppercase color-title text-center fs-14 mb-3 fw-600 font-montserrat mt-4 wow fadeInDown">news & events</p>
                 <h3 class="all-title text-center mb-4 m-xl font-kenoky wow fadeInLeft"> Tin tức và sự kiện</h3>
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-4">
+            <div class="row gx-xl-5">
+                <div class="col-lg-4 mt-4 mt-lg-0 ">
                     <div class="title-side-bar__new-event mb-3">
                         <span class="d-inline-block fs-20 fw-600 pb-2 text-uppercase font-montserrat wow fadeInDown"> Kinh nghiệm làm đẹp</span>
                     </div>
                     <div class="list-new-event-sidebar">
-                        <div class="item-new-event-sidebar position-relative wow fadeInUp">
+                        <div class="item-new-event-sidebar mb-3 mb-lg-4 position-relative wow fadeInUp">
                             <div class="img ">
                                 <a href="" class="c-img ">
                                     <img class="img-full" src="./theme/images/image 640.png" alt="img">
@@ -542,8 +570,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list-news-event-slide ">
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="list-news-event-slide pe-3 mb-3 mb-lg-4">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.2s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -559,7 +587,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.4s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -575,7 +603,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.6s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.6s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -591,7 +619,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.8s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.8s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -616,19 +644,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-8">
-                    <h1 class=" fs-20 text-uppercase font-montserrat fw-600 wow fadeInUp wow fadeInDown">Tin tức và sự kiện petunia</h1>
-
-                    <div class=" align-items-center new-event-side-right d-flex mt-3 mb-2 wow fadeInRight">
+                <div class="col-lg-8">
+                    <h1 class=" fs-20 text-uppercase font-montserrat mb-3 mb-lg-4 fw-600 wow fadeInUp wow fadeInDown">Tin tức và sự kiện petunia</h1>
+                    <div class=" align-items-center new-event-side-right d-flex mb-3 mb-lg-4 wow fadeInRight">
+                        <a href=""></a>
                         <div class="row align-items-center ">
                             <div class="col-lg-7 col-xl-8">
                                 <div class="img ">
                                     <a href="" class="c-img">
-                                        <img class="img-full br-5" src="./theme/images/Rectangle 4211.png" alt="">
+                                        <img width="600" height="421" class="img-full " src="./theme/images/Rectangle 4211.png" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-3 ">
+                            <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-3 new-event-side-right__item">
                                 <div class=" ms-2 ">
                                     <div class="name font-montserrat ">
                                         <h2>

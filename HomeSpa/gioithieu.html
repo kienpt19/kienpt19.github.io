@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./theme/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./theme/css/style.css">
     <link rel="stylesheet" href="./theme/css/base.css ">
+<!-- <body style="padding-top: 135px;"> -->
 <body>
     <header class="header-section">
         <div class="container">
@@ -22,7 +23,7 @@
                         <div id="search">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm điều gì đó...">
                                     <button class="btn-search" type="submit">
                                         <img src="./theme/images/search.png" alt="search">
                                     </button>
@@ -60,9 +61,36 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mobile d-block d-lg-none">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo-mobile">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="form-search__mobile d-flex align-items-center justify-content-center">
+                            <span class="btn-close-search">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <form action="" class="form-search-content" method="get">
+                                <input type="text" value id="input-search-header" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                                <button class="btn-search" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <span class="button-mobile-header show-search__mobile">
+                            <img class="img-fluid" src="./theme/images/Group 14.png" alt="icon search">
+                        </span>
+                        <span  class="button-mobile-header show-menu__mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="formclose" class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
             <div class="line-box w-100"></div>
-            <div class="menu pb-4 text-white font-montserrat">
-                <ul class="d-flex justify-content-between fs-20 text-uppercase fw-500">
+            <div class="menu text-white font-montserrat">
+                <ul class="d-flex justify-content-between text-uppercase fw-500">
                     <li>
                         <a href="./index.html" title="Trang chủ">Trang chủ</a>
                     </li>
@@ -252,11 +280,11 @@
                 <div class="container">
                     <div class="navigation-introduce font-montserrat">
                         <p class=" color-primary font-kenoky mb-2 all-title">Giới thiệu</p>
-                        <p>
+                        <p class="fs-14">
                             <a class="me-2" href="./index.html">
                                 Trang chủ
                             </a>
-                            <i class="fa-solid fa-angles-right"></i>
+                            <i class="fa-solid fa-angles-right fs-12"></i>
                             <a class="color-primary ms-2" href="./gioithieu.html">
                                 Giới thiệu
                             </a>
@@ -268,7 +296,7 @@
 
     <section class="container content-introduce ">
             <div class="vision-content position-relative">
-                <div class="vision-content-left">
+                <div class="vision-content-left mb-3 mb-lg-0">
                     <h2 class="all-title position-relative font-kenoky mb-2">Tầm nhìn</h2>
                     
                     <ul class="vision-left-items px-3 py-2 fs-14 font-montserrat lh-22">
@@ -298,7 +326,7 @@
                 <div class="mission-content-left">
                     <img src="./theme/images/image 651.png" alt="" class="img-full">
                 </div>
-                <div class="mission-content-right">
+                <div class="mission-content-right mb-3 mb-lg-0 order-first order-lg-last">
                     <h2 class="all-title position-relative text-end mt-sm-2 mb-2 font-kenoky">Sứ mệnh</h2>
                     <div class="mission-right-items px-3 py-2 fs-14 font-montserrat lh-22">
                         <p class="mb-3"> 
@@ -328,7 +356,7 @@
             </div>
 
             <div class="vision-content position-relative">
-                <div class="vision-content-left">
+                <div class="vision-content-left mb-3 mb-lg-0">
                     <h2 class="all-title position-relative mb-2 font-kenoky">Giá trị cốt lõi</h2>
                     <div class="vision-left-items px-3 py-2 fs-14 font-montserrat lh-22">
                         <p class="mb-3"> 
@@ -361,7 +389,7 @@
     <section class="leader-introduce">
         <div class="container section-all">
             <div class="leader-title">
-                <h3 class="all-title text-center mb-4 m-xl font-kenoky"> Ban lãnh đạo của Petunia HomeSpa</h3>
+                <h3 class="all-title text-center mb-3 mb-lg-5 font-kenoky"> Ban lãnh đạo của Petunia HomeSpa</h3>
             </div>
             <div class="swiper-container slide-leader__index">
                 <div class="swiper-wrapper">
@@ -422,7 +450,6 @@
         </div>
     </section>
 
-    
 
     <section class="certificate">
         <div class="certificate-title">
@@ -510,7 +537,7 @@
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide slider-footer pb-3 wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="footer-slide-basis font-montserrat">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-1">
                                         <img src="./theme/images/map-footer.png" alt="img map-footer">
                                         <h3 class=" text-uppercase color-primary fs-16 fw-600 ms-2 ">Cơ sở 1</h3>
                                     </div>
@@ -519,7 +546,7 @@
                             </div>
                             <div class="swiper-slide slider-footer pb-3 wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="footer-slide-basis font-montserrat">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-1">
                                         <img src="./theme/images/map-footer.png" alt="img map-footer">
                                         <h3 class=" text-uppercase color-primary fs-16 fw-600 ms-2 ">Cơ sở 2</h3>
                                     </div>
@@ -528,7 +555,7 @@
                             </div>
                             <div class="swiper-slide slider-footer pb-3 wow fadeInUp" data-wow-delay="0.6s">
                                 <div class="footer-slide-basis font-montserrat">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-1">
                                         <img src="./theme/images/map-footer.png" alt="img map-footer">
                                         <h3 class=" text-uppercase color-primary fs-16 fw-600 ms-2 ">Cơ sở 3</h3>
                                     </div>
@@ -537,7 +564,7 @@
                             </div>
                             <div class="swiper-slide slider-footer pb-3 wow fadeInUp" data-wow-delay="0.8s">
                                 <div class="footer-slide-basis font-montserrat">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-1">
                                         <img src="./theme/images/map-footer.png" alt="img map-footer">
                                         <h3 class=" text-uppercase color-primary fs-16 fw-600 ms-2 ">Cơ sở 4</h3>
                                     </div>

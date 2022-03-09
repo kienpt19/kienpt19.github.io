@@ -22,7 +22,7 @@
                         <div id="search">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm điều gì đó...">
                                     <button class="btn-search" type="submit">
                                         <img src="./theme/images/search.png" alt="search">
                                     </button>
@@ -60,9 +60,36 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mobile d-block d-lg-none">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo-mobile">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="form-search__mobile d-flex align-items-center justify-content-center">
+                            <span class="btn-close-search">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <form action="" class="form-search-content" method="get">
+                                <input type="text" value id="input-search-header" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                                <button class="btn-search" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <span class="button-mobile-header show-search__mobile">
+                            <img class="img-fluid" src="./theme/images/Group 14.png" alt="icon search">
+                        </span>
+                        <span  class="button-mobile-header show-menu__mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="formclose" class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
             <div class="line-box w-100"></div>
-            <div class="menu pb-4 text-white font-montserrat">
-                <ul class="d-flex justify-content-between fs-20 text-uppercase fw-500">
+            <div class="menu text-white font-montserrat">
+                <ul class="d-flex justify-content-between text-uppercase fw-500">
                     <li>
                         <a href="./index.html" title="Trang chủ">Trang chủ</a>
                     </li>
@@ -266,19 +293,19 @@
         </div>
     </section>
 
-    <section class="new-event">
-        <div class="container section-all font-montserrat">
+    <section class="new-event section-all">
+        <div class="container  font-montserrat">
             <div class="new-event-title">
                 <p class="text-uppercase color-title text-center fs-18 mb-3 fw-600 font-montserrat mt-4 wow fadeInDown">news & events</p>
                 <h3 class="all-title text-center mb-4 m-xl font-kenoky wow fadeInLeft"> Tin tức và sự kiện</h3>
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-4">
+            <div class="row gx-xl-5">
+                <div class="col-lg-4 mt-4 mt-lg-0 ">
                     <div class="title-side-bar__new-event mb-3">
                         <span class="d-inline-block fs-20 fw-600 pb-2 text-uppercase font-montserrat wow fadeInDown"> Kinh nghiệm làm đẹp</span>
                     </div>
                     <div class="list-new-event-sidebar">
-                        <div class="item-new-event-sidebar position-relative wow fadeInUp">
+                        <div class="item-new-event-sidebar mb-3 mb-lg-4 position-relative wow fadeInUp">
                             <div class="img ">
                                 <a href="" class="c-img ">
                                     <img class="img-full" src="./theme/images/image 640.png" alt="img">
@@ -298,8 +325,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list-news-event-slide ">
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="list-news-event-slide pe-3 mb-3 mb-lg-4">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.2s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -315,7 +342,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.4s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -331,7 +358,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.6s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.6s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -347,7 +374,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.8s">
+                            <div class="item-new-event-sidebar-slide align-items-center d-flex  wow fadeInLeft" data-wow-delay="0.8s">
                                 <div class="img">
                                     <a href="" class="c-img">
                                         <img src="./theme/images/Rectangle 4044.png" alt="">
@@ -372,19 +399,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-8">
-                    <h1 class=" fs-20 text-uppercase font-montserrat fw-600 wow fadeInUp wow fadeInDown">Tin tức và sự kiện petunia</h1>
-
-                    <div class=" align-items-center new-event-side-right d-flex mt-3 mb-2 wow fadeInRight">
+                <div class="col-lg-8">
+                    <h1 class=" fs-20 text-uppercase font-montserrat mb-3 mb-lg-4 fw-600 wow fadeInUp wow fadeInDown">Tin tức và sự kiện petunia</h1>
+                    <div class=" align-items-center new-event-side-right d-flex mb-3 mb-lg-4 wow fadeInRight">
+                        <a href=""></a>
                         <div class="row align-items-center ">
                             <div class="col-lg-7 col-xl-8">
                                 <div class="img ">
                                     <a href="" class="c-img">
-                                        <img class="img-full br-5" src="./theme/images/Rectangle 4211.png" alt="">
+                                        <img width="600" height="421" class="img-full " src="./theme/images/Rectangle 4211.png" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-3 ">
+                            <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-3 new-event-side-right__item">
                                 <div class=" ms-2 ">
                                     <div class="name font-montserrat ">
                                         <h2>
@@ -500,13 +527,13 @@
     </section>
 
     <section class="container">
-        <div class="">
+        <div class="new-event__expert">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="row item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="col-lg-4">
                             <div class="img">
-                                <a href="" class="c-img">
+                                <a href="./chiasekinhnghiem.html" class="c-img">
                                     <img class="img-full"  src="./theme/images/image 648.png" alt="">
                                 </a>
                             </div>
@@ -514,7 +541,7 @@
                         <div class="col-lg-8">
                             <div class="content ms-2 font-montserrat">
                                 <div class="name fw-500">
-                                    <a href="" class="fs-18 roboto lh-24 text-uppercase"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                    <a href="./chiasekinhnghiem.html" class="fs-16 font-montserrat mt-3 mt-xl-0 fw-600 mb-1"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021 2022</a>
                                     <div class="d-flex flex-wrap mb-1 mt-2  color-gray fs-14">
                                         <div class="d-flex align-items-center font-montserrat fs-14 me-4 me-xl-5 ">
                                             <i class="fa-solid fa-clock color-main"></i>
@@ -525,7 +552,7 @@
                                             <span class="ms-1"> Admin</span>
                                         </div>
                                     </div>
-                                    <p class="mt-2 mb-2 fs-16 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
+                                    <p class="mt-2 mb-2 fs-14 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
                                 </div>
                             </div>
                         </div>
@@ -533,7 +560,7 @@
                     <div class="row item-new-event-sidebar-slide align-items-center d-flex mt-3 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
                         <div class="col-lg-4">
                             <div class="img">
-                                <a href="" class="c-img">
+                                <a href="./chiasekinhnghiem.html" class="c-img">
                                     <img class="img-full"  src="./theme/images/image 648.png" alt="">
                                 </a>
                             </div>
@@ -541,7 +568,7 @@
                         <div class="col-lg-8">
                             <div class="content ms-2 font-montserrat">
                                 <div class="name fw-500">
-                                    <a href="" class="fs-18 roboto lh-24 text-uppercase"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                    <a href="./chiasekinhnghiem.html" class="fs-16 font-montserrat mt-3 mt-xl-0 fw-600 mb-1"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
                                     <div class="d-flex flex-wrap mb-1 mt-2  color-gray fs-14">
                                         <div class="d-flex align-items-center font-montserrat fs-14 me-4 me-xl-5 ">
                                             <i class="fa-solid fa-clock color-main"></i>
@@ -552,7 +579,7 @@
                                             <span class="ms-1"> Admin</span>
                                         </div>
                                     </div>
-                                    <p class="mt-2 mb-2 fs-16 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
+                                    <p class="mt-2 mb-2 fs-14 lh-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
                                 </div>
                             </div>
                         </div>
@@ -568,7 +595,7 @@
                         <div class="col-lg-8">
                             <div class="content ms-2 font-montserrat">
                                 <div class="name fw-500">
-                                    <a href="" class="fs-18 roboto lh-24 text-uppercase"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                    <a href="" class="fs-16 font-montserrat mt-3 mt-xl-0 fw-600 mb-1"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
                                     <div class="d-flex flex-wrap mb-1 mt-2  color-gray fs-14">
                                         <div class="d-flex align-items-center font-montserrat fs-14 me-4 me-xl-5 ">
                                             <i class="fa-solid fa-clock color-main"></i>
@@ -579,7 +606,7 @@
                                             <span class="ms-1"> Admin</span>
                                         </div>
                                     </div>
-                                    <p class="mt-2 mb-2 fs-16 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
+                                    <p class="mt-2 mb-2 fs-14 lh-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +622,7 @@
                         <div class="col-lg-8">
                             <div class="content ms-2 font-montserrat">
                                 <div class="name fw-500">
-                                    <a href="" class="fs-18 roboto lh-24 text-uppercase"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                    <a href="" class="fs-16 font-montserrat mt-3 mt-xl-0 fw-600 mb-1"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
                                     <div class="d-flex flex-wrap mb-1 mt-2  color-gray fs-14">
                                         <div class="d-flex align-items-center font-montserrat fs-14 me-4 me-xl-5 ">
                                             <i class="fa-solid fa-clock color-main"></i>
@@ -606,7 +633,7 @@
                                             <span class="ms-1"> Admin</span>
                                         </div>
                                     </div>
-                                    <p class="mt-2 mb-2 fs-16 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
+                                    <p class="mt-2 mb-2 fs-14 lh-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
                                 </div>
                             </div>
                         </div>
@@ -622,7 +649,7 @@
                         <div class="col-lg-8">
                             <div class="content ms-2 font-montserrat">
                                 <div class="name fw-500">
-                                    <a href="" class="fs-18 roboto lh-24 text-uppercase"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
+                                    <a href="" class="fs-16 font-montserrat mt-3 mt-xl-0 fw-600 mb-1"> Trao giải cho 22 gương mặt VIMER tiêu biểu Quý 1 & 2 NĂM 2021</a>
                                     <div class="d-flex flex-wrap mb-1 mt-2  color-gray fs-14">
                                         <div class="d-flex align-items-center font-montserrat fs-14 me-4 me-xl-5 ">
                                             <i class="fa-solid fa-clock color-main"></i>
@@ -633,36 +660,36 @@
                                             <span class="ms-1"> Admin</span>
                                         </div>
                                     </div>
-                                    <p class="mt-2 mb-2 fs-16 lh-22">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
+                                    <p class="mt-2 mb-2 fs-14 lh-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam voluptates laudantium deleniti eum optio laborum qui dolore delectus libero doloribus, repellat aperiam eligendi molestias. Expedita modi omnis nam reprehenderit.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="news-pagination mt-3 text-center font-montserrat">
-                            <span class="ms-2 text-white back-primary">
+                            <span class="ms-2 fs-14 text-white back-primary">
                                 <a href="">1 </a>
                             </span>
-                            <span class="ms-2 ">
+                            <span class="ms-2  fs-14 ">
                                 <a href="">2 </a>
                             </span>
-                            <span class="ms-2 ">
+                            <span class="ms-2  fs-14 ">
                                 <a href="">3 </a>
                             </span>
-                            <span class="ms-2 color-primary">
+                            <span class="ms-2 fs-14  color-primary">
                                 <a href="">Kế tiếp </a>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-2">
                     <div class="list-group news-event-site-bar" id="list-tab" role="tablist">
                         <h2 class="color-primary fs-30 ms-2 my-3 wow fadeInDown">Tin nổi bật</h2>
                         <a class="wow fadeInRight" data-wow-delay="0.2s" href="">
                             <div class="d-flex align-items-center m-2 pb-2 border-bottom">
                                 <div>
-                                    <img class="img-full ms-2" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
+                                    <img class="img-full" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
                                 </div>
-                                <div class=" news-event-site-bar-text ps-3">
-                                    <h3 class=" fs-18 font-montserrat">
+                                <div class=" news-event-site-bar-text ps-2">
+                                    <h3 class=" fs-16 font-montserrat">
                                         Làm sao để giữ da luôn được mềm mại căng mịn trắng sáng
                                     </h3>
                                     <div class="d-flex align-items-center font-montserrat pt-3 color-gray fs-14 me-4 me-xl-5 ">
@@ -675,10 +702,10 @@
                         <a class="wow fadeInRight" data-wow-delay="0.4s" href="">
                             <div class="d-flex align-items-center m-2 pb-2 border-bottom">
                                 <div>
-                                    <img class="img-full ms-2" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
+                                    <img class="img-full" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
                                 </div>
-                                <div class=" news-event-site-bar-text ps-3">
-                                    <h3 class=" fs-18 font-montserrat">
+                                <div class=" news-event-site-bar-text ps-2">
+                                    <h3 class=" fs-16 font-montserrat">
                                         Làm sao để giữ da luôn được mềm mại căng mịn trắng sáng
                                     </h3>
                                     <div class="d-flex align-items-center font-montserrat pt-3 color-gray fs-14 me-4 me-xl-5 ">
@@ -691,10 +718,10 @@
                         <a class="wow fadeInRight" data-wow-delay="0.6s" href="">
                             <div class="d-flex align-items-center m-2 pb-2 border-bottom">
                                 <div>
-                                    <img class="img-full ms-2" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
+                                    <img class="img-full" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
                                 </div>
-                                <div class=" news-event-site-bar-text ps-3">
-                                    <h3 class=" fs-18 font-montserrat">
+                                <div class=" news-event-site-bar-text ps-2">
+                                    <h3 class=" fs-16 font-montserrat">
                                         Làm sao để giữ da luôn được mềm mại căng mịn trắng sáng
                                     </h3>
                                     <div class="d-flex align-items-center font-montserrat pt-3 color-gray fs-14 me-4 me-xl-5 ">
@@ -707,10 +734,10 @@
                         <a class="wow fadeInRight" data-wow-delay="0.8s" href="">
                             <div class="d-flex align-items-center m-2 pb-2 border-bottom">
                                 <div>
-                                    <img class="img-full ms-2" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
+                                    <img class="img-full" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
                                 </div>
-                                <div class=" news-event-site-bar-text ps-3">
-                                    <h3 class=" fs-18 font-montserrat">
+                                <div class=" news-event-site-bar-text ps-2">
+                                    <h3 class=" fs-16 font-montserrat">
                                         Làm sao để giữ da luôn được mềm mại căng mịn trắng sáng
                                     </h3>
                                     <div class="d-flex align-items-center font-montserrat pt-3 color-gray fs-14 me-4 me-xl-5 ">
@@ -723,10 +750,10 @@
                         <a class="wow fadeInRight" data-wow-delay="1s" href="">
                             <div class="d-flex align-items-center m-2 pb-2 border-bottom">
                                 <div>
-                                    <img class="img-full ms-2" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
+                                    <img class="img-full" src="./theme/images/unsplash_a9pFSC8dTlo.png" alt="">
                                 </div>
-                                <div class=" news-event-site-bar-text ps-3">
-                                    <h3 class=" fs-18 font-montserrat">
+                                <div class=" news-event-site-bar-text ps-2">
+                                    <h3 class=" fs-16 font-montserrat">
                                         Làm sao để giữ da luôn được mềm mại căng mịn trắng sáng
                                     </h3>
                                     <div class="d-flex align-items-center font-montserrat pt-3 color-gray fs-14 me-4 me-xl-5 ">
@@ -746,7 +773,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="footer position-relative">
         <div class="container">

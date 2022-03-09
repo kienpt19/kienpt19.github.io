@@ -22,7 +22,7 @@
                         <div id="search">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm điều gì đó...">
                                     <button class="btn-search" type="submit">
                                         <img src="./theme/images/search.png" alt="search">
                                     </button>
@@ -60,9 +60,36 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mobile d-block d-lg-none">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo-mobile">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="form-search__mobile d-flex align-items-center justify-content-center">
+                            <span class="btn-close-search">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <form action="" class="form-search-content" method="get">
+                                <input type="text" value id="input-search-header" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                                <button class="btn-search" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <span class="button-mobile-header show-search__mobile">
+                            <img class="img-fluid" src="./theme/images/Group 14.png" alt="icon search">
+                        </span>
+                        <span  class="button-mobile-header show-menu__mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="formclose" class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
             <div class="line-box w-100"></div>
-            <div class="menu pb-4 text-white font-montserrat">
-                <ul class="d-flex justify-content-between fs-20 text-uppercase fw-500">
+            <div class="menu text-white font-montserrat">
+                <ul class="d-flex justify-content-between text-uppercase fw-500">
                     <li>
                         <a href="./index.html" title="Trang chủ">Trang chủ</a>
                     </li>
@@ -245,13 +272,14 @@
         </div>
 
     </header>
+
     <section class="banner-service">
         <div class="service-img position-relative">
             <img class="img-full" src="./theme/images/Banner-gioithieu.png" alt="">
             <div class="container">
                 <div class="navigation-introduce font-montserrat">
                     <p class="pb-3 color-primary all-title font-kenoky">Tin tức</p>
-                    <p>
+                    <p class="fs-14">
                         <a class="me-2" href="./index.html">
                             Trang chủ
                         </a>
@@ -272,54 +300,51 @@
     <section class="container font-montserrat">
         <div class="section-all bg-white roboto">
             <div class="row mt-4">
-                <div class="col-lg-7 col-xl-8">
-                    <div>
-                        <h3 class="text-black fs-30 lh-36 mb-3"> Kinh nghiệm được chia sẻ từ các chuyên gia</h3>
+                <div class="col-lg-7 ">
+                    <div class="content">
+                        <h3 class="text-black fs-22 lh-24 mb-3"> Kinh nghiệm được chia sẻ từ các chuyên gia</h3>
                         <div class="d-flex flex-wrap mb-3">
                             <div class="d-flex align-items-center font-montserrat  fs-14 me-4 me-xl-5 wow fadeInUp" data-wow-delay="0.2s">
                                 <i class="fa-solid fa-clock color-main"></i>
-                                <span class="ms-1"> 22/02/2022</span>
+                                <span class="ms-1 fs-14"> 22/02/2022</span>
                             </div>
                             <div class="d-flex align-items-center font-montserrat wow fadeInUp" data-wow-delay="0.4s">
                                 <i class="fa-solid fa-user"></i>
-                                <span class="ms-1"> Admin</span>
+                                <span class="ms-1 fs-14"> Admin</span>
                             </div>
                         </div>
                         <img class="img-full mb-3 br-5" src="./theme/images/19002187.png" alt="">
-                        <p class="fs-16 lh-24 mb-3 wow fadeInUp ">
+                        <p class="fs-14 lh-20 mb-3 wow fadeInUp ">
                             Ngồi trước màn hình, thường xuyên cúi cổ, lao động gắng sức, mang vác vật nặng trên vùng đầu cổ, chấn thương… là những nguyên nhân phổ biến gây đau mỏi vai gáy, đau nhức vùng cổ.
                              Ngoài ra cơn đau còn thường xuyên khởi phát ở những bệnh nhân có vấn đề ở cột sống cổ và và vai như, thoát vị đĩa đệm cột sống cổ, thoái hóa cột sống cổ, viêm khớp vai, viêm quanh khớp vai… <br>
                             Nhằm giúp bạn giải tỏa đau nhức, mệt mỏi cũng như giúp cơ thể được thư giãn sau những áp lực trong cuộc sống và công việc, gói trị liệu massage cổ vai gáy tại Petunia
                             Charm Center sẽ mang đến năng lượng cho ngày mới. Đây chính là sự lựa chọn hoàn hảo với dân văn phòng, hay những người thường xuyên phải ngồi hoặc đứng lâu.
                         </p>
-                        <p class="mb-2 mt-2 fs-16 lh-24 ">
+                        <p class="mb-2 mt-2 fs-14 lh-20 ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu orci mus odio et id diam. Ridiculus
                              mauris varius lacus, lacus vitae, tellus eget. Aliquet ornare proin mi, ac. Sit dignissim ornare felis,
                               elit nisi, platea eget morbi vel. Sapien volutpat mollis at faucibus interdum vitae mi ultricies viverra. Purus ut viverra sit amet, leo. Arcu gravida aliquam etiam eu, elit sed. Feugiat quam amet enim vestibulum, donec nunc. Ut id massa amet sed faucibus. Congue cursus sit nunc tellus vitae et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu orci mus odio et id diam. Ridiculus mauris varius lacus, lacus vitae, tellus eget. Aliquet ornare proin mi, ac. Sit dignissim ornare felis, elit nisi, platea eget morbi vel. Sapien volutpat mollis at faucibus interdum vitae mi ultricies viverra. Purus ut viverra sit amet, leo. Arcu gravida aliquam etiam eu, elit sed. Feugiat quam 
                             amet enim vestibulum, donec nunc. Ut id massa amet sed faucibus. Congue cursus sit nunc tellus vitae et.
                         </p>
-                        <p class="mb-2 mt-2 fs-16 lh-24">
+                        <p class="mb-2 mt-2 fs-14 lh-20">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu orci mus odio et id diam.
                         </p>
-                        <div class="h-500">
-                            <div class="row">
-                                <div class="col-lg-7">
+                        <!-- <div class="h-500">
+                            <div class="row d-flex">
+                                <div class="col-lg-8">
                                     <img class="img-full w-100 h-100 pb-2 mt-2 br-5" src="./theme/images/Rectangle 4161.png" alt="">
                                 </div>
-                                <div class="col-lg-5">
-                                    <div class="w-100">
+                                <div class="col-lg-4">
+                                    <div class="">
                                         <img src="./theme/images/Rectangle 4162.png" alt="" class="img-full mt-2 mb-2 br-5">
                                         <img src="./theme/images/Rectangle 4163.png" alt="" class="img-full mt-2 mb-2 br-5">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                   
-                    
+                        </div> -->
+                    </div> 
                 </div>
-                <div class="col-lg-5 col-xl-4 mt-4 mt-lg-0 ps-xxl-4">
+                <div class="col-lg-5  mt-4 mt-lg-0 ps-xxl-4">
                         <div class="item-news-sidebar wow fadeInRight" data-wow-delay="0.6s">
                             <div class="img">
                                 <iframe class="img-full br-10 mb-2"  src="https://www.youtube.com/embed/ChBnZXtvCxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -340,9 +365,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>

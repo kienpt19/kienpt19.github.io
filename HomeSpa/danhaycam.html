@@ -22,7 +22,7 @@
                         <div id="search">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
+                                    <input type="text " name="timkiem" placeholder="Tìm kiếm điều gì đó...">
                                     <button class="btn-search" type="submit">
                                         <img src="./theme/images/search.png" alt="search">
                                     </button>
@@ -60,9 +60,36 @@
                     </div>
                 </div>
             </div>
+            <div class="header-mobile d-block d-lg-none">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo-mobile">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="form-search__mobile d-flex align-items-center justify-content-center">
+                            <span class="btn-close-search">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <form action="" class="form-search-content" method="get">
+                                <input type="text" value id="input-search-header" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                                <button class="btn-search" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <span class="button-mobile-header show-search__mobile">
+                            <img class="img-fluid" src="./theme/images/Group 14.png" alt="icon search">
+                        </span>
+                        <span  class="button-mobile-header show-menu__mobile">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div class="formclose" class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
             <div class="line-box w-100"></div>
-            <div class="menu pb-4 text-white font-montserrat">
-                <ul class="d-flex justify-content-between fs-20 text-uppercase fw-500">
+            <div class="menu text-white font-montserrat">
+                <ul class="d-flex justify-content-between text-uppercase fw-500">
                     <li>
                         <a href="./index.html" title="Trang chủ">Trang chủ</a>
                     </li>
@@ -252,7 +279,7 @@
                 <div class="container">
                     <div class="navigation-introduce font-montserrat">
                         <p class="color-primary all-title font-kenoky mb-2 wow fadeInUp">Chăm sóc da nhạy cảm</p>
-                        <p class="wow fadeInUp">
+                        <p class="wow fadeInUp fs-14">
                             <a class="me-2" href="./index.html">
                                 Trang chủ
                             </a>
@@ -459,23 +486,28 @@
         </div>
     </section>
 
-    <section class="form-logup ">
-        <div class="position-relative container">
+    <section class="form-logup font-montserrat">
+        <div class="container">
             <div class=" form-logup__content text-center">
-                <p class="text-center pt-5 font-montserrat font-kenoky color-primary mb-4 fs-26 fw-500 wow fadeInUp">Đăng ký hợp tác với pettnia HomeSpa</p>
-                
-                <div class="row g-2">
-                    <div class="col-lg-6 col-sm-12">
-                        <input type="text" name="hoten" placeholder="Họ tên...">
-                        <input type="text" name="dc" placeholder="địa chỉ...">
+                <p class="text-center pt-2 font-montserrat color-primary mb-3 fs-26 font-kenoky fw-500 wow fadeInUp">Đăng ký hợp tác với pettnia HomeSpa</p>
+                <div class="row ">
+                    <div class="col-lg-6 mb-3 mb-lg-4">
+                        <input class="form-control" type="text" name="hoten" placeholder="Họ tên...">
                     </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <input type="number" name="hoten" placeholder="Số điện thoại...">
-                    <select type="text" name="sdt" placeholder="Gói hợp tác..."> 
-                        <option value="0"> Gói hơp tác... </option>    
-                        <option value="1"> Hợp tác kinh doanh</option>
-                        <option value="2"> Hợp tác cộng tác viên</option>
-                    </select>
+                    <div class="col-lg-6 mb-3 mb-lg-4">
+                        <input class="form-control" type="text" name="dc" placeholder="địa chỉ...">
+                    </div>
+                    <div class="col-lg-6 mb-3 mb-lg-4">
+                        <input class="form-control" type="number" name="hoten" placeholder="Số điện thoại...">
+                    </div >
+                    <div class="col-lg-6 mb-3 mb-lg-4">
+                        <div class="position-relative">
+                            <select class="form-control" type="text" name="sdt"> 
+                                <option value="0"> Gói hơp tác... </option>    
+                                <option value="1"> Hợp tác kinh doanh</option>
+                                <option value="2"> Hợp tác cộng tác viên</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <button class="btn" type="submit"> Gửi thông tin</button>
@@ -658,6 +690,84 @@
         </div>
     </section>
 
+    <!-- <section class="newspaper">
+        <div class="container section-all">
+            <div class="newspaper-title">
+                <p class="text-uppercase color-title text-center fs-14 mb-3 fw-600 font-montserrat mt-4 wow fadeInDown">TESTIMONIAL</p>
+                <h3 class="all-title text-center mb-3 mb-lg-5 font-kenoky wow fadeInLeft"> Báo chí nói gì về chúng tôi ?</h3>
+            </div>
+            <div class="swiper-container slide-newspaper__index">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-newspaper pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="items-newapaper">
+                            <a class="img c-img" href=""><img class="w-100 img-full" src="./theme/images/image 762.png" alt="image-background"></a>
+                        <div class="container">
+                            <div class="newspaper-text font-montserrat">
+                                <h2 class="fw-600 fs-16 lh-22 pt-3 mb-2">
+                                    <a href="" > Petunia HomeSpa - Địa chỉ chăm sóc sức khỏe và sắc đẹp uy tín cho chị em </a>
+                                </h2>
+                                <p class=" mb-2 fs-14 lh-20">Lorem ipsum dolor sit amet, consectetur adip. Netus sit eget lacus, vitae, pulvinar. Lorem ipsum dolor sit amet...</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-newspaper pb-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="items-newapaper">
+                            <a href=""><img class="w-100 img-full" src="./theme/images/image 762 (1).png" alt="image-background"></a>
+                        <div class="container">
+                            <div class="newspaper-text font-montserrat">
+                                <h2 class="fw-600 fs-16 lh-22 pt-3 mb-2">
+                                    <a href="" > Petunia HomeSpa - Địa chỉ chăm sóc sức khỏe và sắc đẹp uy tín cho chị em </a>
+                                </h2>
+                                <p class=" mb-2 fs-14 lh-20">Lorem ipsum dolor sit amet, consectetur adip. Netus sit eget lacus, vitae, pulvinar. Lorem ipsum dolor sit amet...</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-newspaper pb-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="items-newapaper">
+                            <a href=""><img class="w-100 img-full" src="./theme/images/image 762 (2).png" alt="image-background"></a>
+                        <div class="container">
+                            <div class="newspaper-text font-montserrat">
+                                <h2 class="fw-600 fs-16 lh-22 pt-3 mb-2">
+                                    <a href="" > Petunia HomeSpa - Địa chỉ chăm sóc sức khỏe và sắc đẹp uy tín cho chị em </a>
+                                </h2>
+                                <p class=" mb-2 fs-14 lh-20">Lorem ipsum dolor sit amet, consectetur adip. Netus sit eget lacus, vitae, pulvinar. Lorem ipsum dolor sit amet...</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-newspaper pb-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="items-newapaper">
+                            <a href=""><img class="w-100 img-full" src="./theme/images/image 762.png" alt="image-background"></a>
+                        <div class="container">
+                            <div class="newspaper-text font-montserrat">
+                                <h2 class="fw-600 fs-16 lh-22 pt-3 mb-2">
+                                    <a href="" > Petunia HomeSpa - Địa chỉ chăm sóc sức khỏe và sắc đẹp uy tín cho chị em </a>
+                                </h2>
+                                <p class=" mb-2 fs-14 lh-20">Lorem ipsum dolor sit amet, consectetur adip. Netus sit eget lacus, vitae, pulvinar. Lorem ipsum dolor sit amet...</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-newspaper pb-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="items-newapaper">
+                            <a href=""><img class="w-100 img-full" src="./theme/images/image 762 (2).png" alt="image-background"></a>
+                        <div class="container">
+                            <div class="newspaper-text font-montserrat">
+                                <h2 class="fw-600 fs-16 lh-22 pt-3 mb-2">
+                                    <a href="" > Petunia HomeSpa - Địa chỉ chăm sóc sức khỏe và sắc đẹp uy tín cho chị em </a>
+                                </h2>
+                                <p class=" mb-2 fs-14 lh-20">Lorem ipsum dolor sit amet, consectetur adip. Netus sit eget lacus, vitae, pulvinar. Lorem ipsum dolor sit amet...</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-newspaper-index"></div>
+            </div>
+        </div>
+    </section> -->
 
     <footer class="footer position-relative">
         <div class="container">
