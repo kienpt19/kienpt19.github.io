@@ -1,0 +1,29 @@
+
+
+
+.controls {
+  cursor: pointer;
+  height: 23px;
+}
+.controls .play {
+  background-position: -8px -171px;
+}
+.controls .pause {
+  background-position: -8px -198px;
+  display: none;
+}
+
+.controls .play:hover {
+  background-position: -8px -170px;
+}
+.controls .pause:hover {
+  background-position: -8px -197px;
+}
+
+.hidden {
+  display: none;
+}
+.controls .visible {
+  display: block;
+}
+

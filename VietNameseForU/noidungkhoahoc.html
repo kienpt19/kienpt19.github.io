@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội dung khóa học</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/css/animate.css">
+    <link rel="stylesheet" href="./theme/css/boostrap.min.css">
+    <link rel="stylesheet" href="./theme/css/reset.css">
+    <link rel="stylesheet" href="./theme/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+    <link rel="stylesheet" href="./theme/css/base.css ">
+    <link rel="stylesheet" href="./theme/css/classmate.css">
+    <link rel="stylesheet" href="./theme/css/account-manager.css">
+</head>
+<body>
+    <header class="header fixed">
+        <div class="header-top cl-white d-none d-lg-block">
+            <div class="container d-flex align-items-cetner justify-content-between">
+                <div class="header-top__left d-flex align-items-center">
+                    <div class="change-language">
+                        <span class="select-language">
+                            <i class="fa-solid fa-globe mr-10"></i>
+                            Ngôn ngữ
+                            <i class="fa-solid fa-angle-down ml-15"></i>
+                        </span>
+                        <div class="language-content">
+                            <a href="" class="language-item active">Tiếng Việt</a>
+                            <a href="" class="language-item">Tiếng Anh</a>
+                            <a href="" class="language-item">Tiếng Trung</a>
+                            <a href="" class="language-item">Tiếng Nhật</a>
+                        </div>
+                    </div>
+                    <ul class="social-network-list d-none d-lg-flex">
+                        <li><a href="http://fb.com" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com" title="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                        <li><a href="https://instagram.com" title="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a></li>
+                        <li><a href="https://youtube.com" title="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
+                        <li><a href="https://sktpe.com" title="skype">
+                            <i class="fa-brands fa-skype"></i>
+                        </a></li>
+                        <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" title="talk">
+                            <img class="social-talk" src="./theme/images/KakaoTalk_logo 1.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="header-top__right d-flex align-items-center">
+                    <a href="" class="btn btn-orange__all btn-hover mr-30 d-none d-lg-flex" title="kích hoạt khóa học">
+                        Kích hoạt khóa học
+                    </a>
+                    <div class="form-login-header">
+                        <a href="./dangnhap.html" title="Đăng nhập" class="login-item ml-30">
+                            <i class="fa-solid fa-user mr-10"></i>
+                            Đăng nhập
+                        </a>
+                        <a href="./dangky.html" title="Đăng ký" class="login-item ml-30">
+                            <i class="fa-solid fa-lock mr-10"></i>
+                            Đăng ký
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-top__mobile header-top d-block d-lg-none cl-white">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1>
+                    <a href="" class="logo-mobile d-block">
+                        <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="button-header__mobile d-flex align-items-center justify-content-end">
+                    <div class="change-language-mobile position-relative me-3">
+                        <span class="content">
+                            Ngôn ngữ
+                            <i class="fa-solid fa-angle-down "></i>
+                        </span>
+                        <div class="language-content-mobile">
+                            <a href="" class="language-item">Vi</a>
+                            <a href="" class="language-item">En</a>
+                            <a href="" class="language-item">Tr</a>
+                            <a href="" class="language-item">Jp</a>
+                        </div>
+                    </div>
+                    <div class="form-account position-relative">
+                        <div class="auth-mobile d-flex align-items-center">
+                            <span class="icon d-block mr-10">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="show-dashboard">
+                            <ul class="list-link">
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-regular fa-user"></i>
+                                        Thông tin tài khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        Khóa học của tôi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-solid fa-feather-pointed"></i>
+                                        Điểm
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="" class="sign-out">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav cl-white">
+            <div class="container d-block d-lg-flex align-items-center justify-content-between">
+                <h1>
+                    <a href="./index.html" title="trang chủ" class="logo-header d-none d-lg-block">
+                        <img src="./theme/images/logo.png" alt="icon">
+                    </a>
+                </h1>
+                <div class="d-flex align-items-center justify-content-between justify-content-lg-end menu-mobile">
+                    <!-- menu bar mobile start-->
+                    <span class="show-menu d-block d-lg-none fs-24">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <!-- menu bar mobile ends -->
+                    <!-- form search mobile -->
+                    <form action="search" method="get" class="form-search__mobile position-relative d-block d-lg-none">
+                        <button class="btn-search" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <input type="text" name="q" placeholder="Tìm kiếm..." class="form-control" value="">
+                    </form>
+                    <!-- btn kích hoatj khóa học -->
+                    <a href="" title="Kích hoạt khoá học" class="btn btn-orange__all d-flex d-lg-none btn-active__mobile">Kích hoạt khoá học</a>
+    
+                    <div class="menu">
+                        <!-- logo mobile -->
+                        <a href="" title="Trang chủ" class="logo-menu-mobile d-block d-lg-none text-center mt-15 mb-10">
+                            <img src="./theme/images/logo.png" alt="logo">
+                        </a>
+                        <ul>
+                            <li class="menu-item active"><a href="./index.html" >Trang chủ </a></li>
+                            <li class="menu-item "><a href="./gioithieu.html" > Về chúng tôi </a>
+                                <ul class="sub-menu ">
+                                    <li class="sub-menu-item"><a href="">Giới thiệu chung</a></li>
+                                    <li class="sub-menu-item"><a href="">Đội ngũ giáo viên</a></li>
+                                    <li class="sub-menu-item"><a href=""> Học sinh & sinh viên</a></li>
+                                </ul>
+                                <span class="btn-dropdown-menu">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="menu-item "><a href="" > Khóa học</a>
+                                <ul class="sub-menu ">
+                                    <li class="sub-menu-item"><a href="">Ngữ âm</a></li>
+                                    <li class="sub-menu-item"><a href="">Khám phá tiếng Việt</a></li>
+                                    <li class="sub-menu-item"><a href=""> Nền tảng căn bản </a></li>
+                                </ul>
+                                <span class="btn-dropdown-menu">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="menu-item "><a href="" class="menu-item "> Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="over-lay"></div>
+                    <div class="module-search d-none d-lg-block">
+                        <span class="btn-search ">
+                            <i class="fa-solid fa-magnifying-glass search-bar-btn"></i>
+                        </span>
+                        <form action="search" class="form-search-header d-flex align-items-center " >
+                            <input type="text" id="input-search-header" placeholder="Tìm kiếm...">
+                            <button class="btn-icon-search" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section class="navigation bg-e5">
+    <div class="container">
+        <ul >
+            <li class="mb-2">
+                <a href="./index.html" title="trang chủ">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="./index.html" title="Khóa học">
+                    Khóa học
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="./index.html" title="Khóa học">
+                    Danh mục khóa học
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="./index.html">
+                    Khóa học đầu tiên
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section-course__details pb-50 bg-e5">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between mb-15">
+            <h1 class="title-all mb-0 cl-title border-right wow fadeInUp">Khóa học đầu tiên</h1>
+            <a href="./bieuphikhoahoc.html" class="btn btn-orange__all">Đăng kí ngay</a>
+        </div>
+        <p class="star-course">
+            <i class="fa-solid fa-star me-2"></i>
+            500 đánh giá
+        </p>
+        <div class="mt-3">
+            <div class="s-content text-justify mb-md-30 mb-25 fs-14 cl-text lh-16 wow fadeInUp">
+                VietnameseforU được hình thành nhằm mục đích đưa Tiếng Việt tới gần hơn với những người nước ngoài 
+                ở Việt Nam và người nước ngoài trên khắp thế giới đang có nhu cầu tìm hiểu, học tập ngôn ngữ Tiếng Việt.
+                 Trong thời đại 4.0, chỉ cần ngồi trước máy tính, ở bất cứ nơi đâu, bất cứ lúc nào, mọi người đều
+                  có thể học tập, tiếp cận ngôn ngữ Tiếng Việt từ dễ tới khó, 
+                từ cơ bản đến nâng cao theo nhu cầu của mình. VietnameseforU sinh ra để thỏa mãn nhu cầu đó.   
+            </div>
+            <div class="image text-center circle-left">
+                <img class="img-fluid" src="./theme/images/mimi-thian-vdXMSiX-n6M-unsplash 1.png" alt="">
+            </div>
+        </div>
+        <div class="bg-white pd-20 br-10 item-course__detail mb-50 wow fadeInUp">
+            <p class="fs-24 cl-title fw-bold pb-15 mb-30 border-bottom">Người hướng dẫn</p>
+            <div class="row intructor">
+                <div class="col-12 col-lg-2 mb-md-25">
+                    <div class="img-intructor">
+                        <img class="img-fluid" src="./theme/images/image 582.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div class="info-intructor">
+                        <p class="fs-18 cl-title fw-bold mb-3">Nguyễn vân Anh</p>
+                        <p class="fs-16 cl-text mb-3">Giáo viên dại học ngoại ngữ</p>
+                        <ul class="social-network d-flex mb-15">
+                            <li><a href="" title="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></li>
+                            <li><a href="" title="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a></li>
+                            <li><a href="" title="google">
+                                <i class="fa-brands fa-google-plus"></i>
+                            </a></li>
+                        </ul>
+                        <p class="fs-16 lh-16 mb-15 cl-text">
+                            Amet, cursus accumsan pulvinar a, a, neque, rhoncus gravida lectus. Id 
+                            lobortis sit id consequat, ultrices tellus vestibulum non. Laoreet cras gravida ultricies nulla arcu sapien.
+                        </p>
+                        <ul class="list-intructor">
+                            <li>Habitant eget sit urna, arcu congue velgravida ultricies nulla arcu sapien. </li>
+                            <li>Habitant eget sit urna, arcu congue vel. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white pd-20 br-10 item-course__detail mb-50 wow fadeInUp">
+            <h1 class="fs-24 cl-title fw-bold mb-25">Nội dung khóa học</h1>
+            <div class="course-overview br-10 bd-eb mb-25">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                            1k bài học
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-book"></i>
+                            </span>
+                            200 bài tập
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                            4545 Học sinh
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-clock"></i>
+                            </span>
+                            3 tháng
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </span>
+                            99% đánh giá tích cực
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <p class="title-overview__course">
+                            <span class="me-2 cl-text">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </span>
+                            Mọi lúc mọi nơi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson__list ">
+                <div class="lesson-list__item play br-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="toc-header lesson-head align-items-center d-flex justify-content-between wow fadeInUp">
+                        <div class="d-flex align-items-center">
+                            <span class="show-content"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            <span class="cl-main stt-lesson">Bài học 1</span>
+                            <span class="ms-2 fs-16">Cách chào hỏi (Greeting)</span>
+                        </div>
+                        <p>
+                            Đã học 
+                            <span class="cl-main">10%</span>
+                        </p>
+                    </div>
+
+                    <div class="lesson-content">
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Hội thoại
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Ngữ pháp
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Từ vựng
+                            </a>
+                            <span class="icon">
+                                <i class="fa-regular fa-circle"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Bài tập
+                            </a>
+                            <span class="icon">
+                                <i class="fa-regular fa-circle"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson-list__item active br-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="toc-header lesson-head align-items-center d-flex justify-content-between wow fadeInUp">
+                        <div class="d-flex align-items-center">
+                            <span class="show-content"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            <span class="cl-main stt-lesson">Bài học 2</span>
+                            <span class="ms-2 fs-16">Bạn tên gì?</span>
+                        </div>
+                        <p>
+                            Đã học 
+                            <span class="cl-main">50%</span>
+                        </p>
+                    </div>
+
+                    <div class="lesson-content">
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Hội thoại
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Ngữ pháp
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Từ vựng
+                            </a>
+                            <span class="icon">
+                                <i class="fa-regular fa-circle"></i>
+                            </span>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Bài tập
+                            </a>
+                            <span class="icon">
+                                <i class="fa-regular fa-circle"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson-list__item lock br-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="toc-header lesson-head align-items-center d-flex justify-content-between wow fadeInUp">
+                        <div class="d-flex align-items-center">
+                            <span class="show-content"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            <span class="cl-main stt-lesson">Bài học 3</span>
+                            <span class="ms-2 fs-16">Dạo này bạn khỏe không?</span>
+                        </div>
+                        <p>
+                            Đã học 
+                            <span class="cl-main">0%</span>
+                        </p>
+                    </div>
+
+                    <div class="lesson-content">
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Hội thoại
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                            <a href="" class="cl-main">Đăng ký ngay</a>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                                Ngữ pháp
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                            <a href="" class="cl-main">Đăng ký ngay</a>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Từ vựng
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                            <a href="" class="cl-main">Đăng ký ngay</a>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               Bài tập
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                            <a href="" class="cl-main">Đăng ký ngay</a>
+                        </div>
+                        <div class="lesson-list__link d-flex align-items-center justify-content-between">
+                            <a href="" class="link">
+                               over view
+                            </a>
+                            <span class="icon">
+                                <i class="fa-solid fa-circle"></i>
+                            </span>
+                            <a href="" class="cl-main">Đăng ký ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-ratings bg-white br-10 pd-20">
+            <div class="comment-ratings__content">
+                <p class="comment-ratings-title mb-25 fs-24 fw-bold">Đánh giá và bình luận</p>
+                <div class="comment-ratings__percent mb-25 row">
+                    <div class="col-lg-4 mb-3 mb-lg-0  comment-rating__score text-center">
+                        <p class="score-big text-center fs-36 mb-15 ">5.0</p>
+                        <p class="fs-14 text-center mb-15">1k đánh giá</p>
+                        <span class="text-center fs-16 cl-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="overview-ratings">
+                            <li>
+                                <div class="overview-ratings__item">
+                                    <p class="" style="width: 100%;"></p>
+                                </div>
+                                <div class="overview-ratings__star ">
+                                    <span class="rating mb-25 cl-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="">100%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overview-ratings__item">
+                                    <p style="width:80%"></p>
+                                </div>
+                                <div class="overview-ratings__star ">
+                                    <span class="rating mb-25 cl-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </span>
+                                    <p class="">80%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overview-ratings__item">
+                                    <p style="width:60%"></p>
+                                </div>
+                                <div class="overview-ratings__star ">
+                                    <span class="rating mb-25 cl-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                    <p class="">60%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overview-ratings__item">
+                                    <p style="width:40%"></p>
+                                </div>
+                                <div class="overview-ratings__star ">
+                                    <span class="rating mb-25 cl-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                    <p class="">40%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overview-ratings__item">
+                                    <p style="width:20%"></p>
+                                </div>
+                                <div class="overview-ratings__star ">
+                                    <span class="rating mb-25 cl-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                    <p class="">20%</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="fs-24 fw-bold mb-3">Gửi bình luận</p>
+                <div class="list-item-comment pt-3">
+                    <div class="comment__item mb-30">
+                        <div class="comment__item-top d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./theme/images/image 582.png" alt="">
+                            <div class="text ms-3">
+                                <p class="fs-24 fw-bold mb-3"> Tommy</p>
+                                <span class="fa-16 me-3">Studient</span>
+                                <span class="cl-star fs-16">
+                                     
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="comment-content">
+                            <p class="fs-16 cl-text lh-16">
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="fs-24 fw-bold mb-3">Viết đánh giá và nhận xét</h3>
+                    <div class="write-comment d-flex justify-content-start">
+                        <img class="img-fluid" src="./theme/images/image 582.png" alt="">
+                        <div class="write-comment-content w-100 ms-3 pt-2 mb-3">
+                            <span class=" fs-16 mb-3">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </span>
+                        <input type="text" placeholder="Viết bình luận">
+                        <button class="btn btn-border__orange">Gửi bình luận</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top row">
+            <div class="col-12 col-lg-9 col-nav-footer">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-address-footer">
+                <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                    về chúng tôi
+               </p>
+               <ul class="list-address__footer mb-15">
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <a href=""> Dolphin Plaza, 6 Nguyen Hoang, Nam Tu Liem, Hanoi, Vietnam</a>
+                    </li>
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <a href=""> vietnameseforU@gmail.com</a>
+                    </li>
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <a href="tel:0942 861 228">0942 861 228</a>
+                    </li>
+               </ul>
+               <ul class="list-social__alls d-flex cl-white">
+                    <li><a href="http://fb.com" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com" title="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="https://instagram.com" title="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://youtube.com" title="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                    <li><a href="https://sktpe.com" title="skype">
+                        <i class="fa-brands fa-skype"></i>
+                    </a></li>
+                    <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" title="talk">
+                        <img class="social-talk" src="./theme/images/KakaoTalk_logo 1.png" alt="">
+                    </a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex align-items-center justify-content-between">
+            <a href="/" class="logo-footer d-none d-lg-block">
+                <img src="./theme/images/logo.png" alt="">
+            </a>
+            <div class="d-flex flex-wrap justify-content-center align-items-center justify-content-md-end cl-white">
+                <a href="" class="item">Chính sách bảo mật</a>
+                <a href="" class="item">Điều khoản dịch vụ</a>
+                <p class="item">© 2021 VietnameseforU. All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="list-social-fix">
+    <a href="tel: 1900 5984" title="holine"> <img src="./theme/images/Vector.png" alt=""></a>
+    <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/image 575.png" alt=""></a>
+    <a href="" title="zalo"> <img src="./theme/images/image 576.png" alt=""></a>
+</div>
+
+<div id="backtop">
+        <img src="./theme/images/backup.png" alt="">
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./theme/js/jquery-3.4.1.min.js"></script>
+    <script src="./theme/js/swiper-bundle.min.js"></script>
+    <script src="./theme/js/wow.min.js"></script>
+    <script src="./theme/js/script.js"></script>
+</body>
+</html>

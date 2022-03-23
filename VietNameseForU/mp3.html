@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/css/animate.css">
+    <link rel="stylesheet" href="./theme/css/boostrap.min.css">
+    <link rel="stylesheet" href="./theme/css/reset.css">
+    <link rel="stylesheet" href="./theme/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./theme/css/play-music.css">
+</head>
+<body>
+    <style>
+      #background-video { 
+        width: 640px; 
+        height: 360px; 
+        position: relative; 
+      }
+      #background-video iframe { 
+        width: 100%; 
+        height: 100%; 
+        display: none; 
+      }
+      #background-video .play-btn { 
+        position: absolute; 
+        top: 0px; 
+        left: 0px; 
+        width: 100%; 
+        height: 100%; 
+        font-size: 0px; 
+        line-height: 0px; 
+        background: url(http://www.legacycitychurch.com/media/cover_art/Play%20Button%20Overlay/playbutton.png) center center no-repeat; 
+        background-size: 120px auto; 
+}
+    </style>
+
+    
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          <header>
+            <h4>Now playing:</h4>
+            <h2>String 57th & 9th</h2>
+          </header>
+      
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb">
+
+            </div>
+          </div>
+      
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause icon-pause"></i>
+              <i class="fas fa-play icon-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+      
+          <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      
+          <audio id="audio" src=""></audio>
+        </div>
+      
+        <!-- Playlist -->
+        <div class="playlist">
+        </div>
+      </div>
+      
+      <div id="background-video" style="background: url(https://cdn.pixabay.com/photo/2018/07/20/22/43/adler-3551609_960_720.jpg) top center no-repeat; background-size: cover;">
+
+        <iframe width="295" height="222" src="https://www.youtube.com/embed/UBCQmEHctCw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        <a class="play-btn" href="#">Play Button</a>
+    
+    </div>
+    <div id="container">
+      <button id="play" class="mt-5">
+          Play Music
+      </button>
+  </div>
+    <script>
+        jQuery('.play-btn').click(function(e) {
+        e.preventDefault();
+        jQuery(this).hide();
+        jQuery('#background-video').find('iframe').show();
+        jQuery('#background-video').find('iframe')[0].src += "?autoplay=1";
+   });
+
+   $('document').ready(function () {
+    $('#play').click(function () {
+        var audio = {};
+        audio["walk"] = new Audio();
+        audio["walk"].src = "./theme/audio/a.mp3"
+        audio["walk"].addEventListener('load', function () {
+            audio["walk"].play();
+        });
+    });
+});  
+    </script>
+
+
+<div class="translate">
+  <div id="google_translate_element">
+    <div dir="ltr" class="skiptranslate goog-te-gadget">
+      <div id=":0.targetLanguage">
+        <select class="goog-te-combo">
+          <option value="">Select Language</option>
+          <option value="af">Afrikaans</option>
+          <option value="sq">Albanian</option>
+          <option value="ar">Arabic</option>
+          <option value="hy">Armenian</option>
+          <option value="az">Azerbaijani</option>
+          <option value="eu">Basque</option>
+          <option value="be">Belarusian</option>
+          <option value="bn">Bengali</option>
+          <option value="bg">Bulgarian</option>
+          <option value="ca">Catalan</option>
+          <option value="zh-CN">Chinese (Simplified)</option>
+          <option value="zh-TW">Chinese (Traditional)</option>
+          <option value="hr">Croatian</option>
+          <option value="cs">Czech</option>
+          <option value="da">Danish</option>
+          <option value="nl">Dutch</option>
+          <option value="eo">Esperanto</option>
+          <option value="et">Estonian</option>
+          <option value="tl">Filipino</option>
+          <option value="fi">Finnish</option>
+          <option value="fr">French</option>
+          <option value="gl">Galician</option>
+          <option value="ka">Georgian</option>
+          <option value="de">German</option>
+          <option value="el">Greek</option>
+          <option value="gu">Gujarati</option>
+          <option value="ht">Haitian Creole</option>
+          <option value="iw">Hebrew</option>
+          <option value="hi">Hindi</option>
+          <option value="hu">Hungarian</option>
+          <option value="is">Icelandic</option>
+          <option value="id">Indonesian</option>
+          <option value="ga">Irish</option>
+          <option value="it">Italian</option>
+          <option value="ja">Japanese</option>
+          <option value="kn">Kannada</option>
+          <option value="ko">Korean</option>
+          <option value="la">Latin</option>
+          <option value="lv">Latvian</option>
+          <option value="lt">Lithuanian</option>
+          <option value="mk">Macedonian</option>
+          <option value="ms">Malay</option>
+          <option value="mt">Maltese</option>
+          <option value="no">Norwegian</option>
+          <option value="fa">Persian</option>
+          <option value="pl">Polish</option>
+          <option value="pt">Portuguese</option>
+          <option value="ro">Romanian</option>
+          <option value="ru">Russian</option>
+          <option value="sr">Serbian</option>
+          <option value="sk">Slovak</option>
+          <option value="sl">Slovenian</option>
+          <option value="es">Spanish</option>
+          <option value="sw">Swahili</option>
+          <option value="sv">Swedish</option>
+          <option value="ta">Tamil</option>
+          <option value="te">Telugu</option>
+          <option value="th">Thai</option>
+          <option value="tr">Turkish</option>
+          <option value="uk">Ukrainian</option>
+          <option value="ur">Urdu</option>
+          <option value="vi">Vietnamese</option>
+          <option value="cy">Welsh</option>
+          <option value="yi">Yiddish</option>
+        </select>
+      </div>
+      Powered by 
+      <span style="white-space: nowrap;">
+        <a class="goog-logo-link" href="http://translate.google.com" target="_blank">
+          <img style="padding-right: 3px;" src="http://www.google.com/images/logos/google_logo_41.png" width="37" height="13">
+          Translate
+        </a>
+      </span>
+    </div>
+  </div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en'
+      }, 'google_translate_element');
+    }
+  </script>
+</div>
+
+<!-- Use a button to open the snackbar -->
+<button onclick="myFunction()">Show Snackbar</button>
+
+<!-- The actual snackbar -->
+<div id="snackbar">Some text some message..</div>
+<style>
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+</style>
+<script>
+  function myFunction() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./theme/js/jquery-3.4.1.min.js"></script>
+    <script src="./theme/js/swiper-bundle.min.js"></script>
+    <script src="./theme/js/wow.min.js"></script>
+    <script src="./theme/js/script.js"></script>
+    <script src="./theme/js/music.js"></script>
+</body>
+</html>
