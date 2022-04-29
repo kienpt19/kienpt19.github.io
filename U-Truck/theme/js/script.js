@@ -369,7 +369,14 @@ var swiper = new Swiper(".slide-product-car", {
 
 
 
-
+// tạo form tìm kiếm
+function timkiem()
+{
+    //danh sach tìm kiếm
+    var danhsachtimkiem="xe ben, xe tải, xe oto, xe cẩu";
+    var timkiem=document.getElementById("timkiem").ariaValueMax;
+    alert(tim-kiem);
+}
 
 
 

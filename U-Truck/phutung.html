@@ -257,7 +257,7 @@
                     
                     <div class="tags align-items-center d-flex flex-wrap mb-3 mt-4 mt-xxl-5">
                         <span class="me-lg-3"> Tags:</span>
-                        <a href="" class="black-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 "> Xe Ben</a>
+                        <a href="#" class="gray-btn active mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 "> Xe Ben</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Tổ chức</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Xe trộn bê tông</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Phụ tùng</a>
@@ -266,13 +266,44 @@
                     <div class="d-flex flex-wrap justify-content-between border-bottom mb-3 pb-2">
                         <div class="info-rating">
                             <div class="items-rating">
-                                <span class="rating">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+                                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+                                    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+                                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+                                    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    
+                                    <input type="radio" id="starhalf" name="rating" value="half" />
+                                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </div>
+                                <!-- <span class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half"></i>
-                                </span>
+                                </span> -->
                             </div>
                             <p class="mt-2 mb-1">Đánh giá bài viết</p>
                         </div>
@@ -513,9 +544,9 @@
                         <li>
                             <ul class="download-app d-flex flex-wrap justify-content-xxl-between app-info-box roboto">
                                 <li class="qr text-center">
-                                    <a href="#">
+                                    <p>
                                         <img src="./theme/images/QR.png" alt="Quét mã QR">
-                                    </a>
+                                    </p>
                                     <p class="fs-12 mt-1">hướng dẫn cài app</p>
                                 </li>
                                 <li class="list-app ms-3 ">
@@ -558,10 +589,10 @@
                     <ul class="footer__content-item">
                         <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >kết nối</h5></li>
                         <li >
-                            <a class="ms-2 footer__content-icon " href="facebook.com"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
-                            <a class="ms-2 footer__content-icon " href="zalo.com"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
-                            <a class="ms-2 footer__content-icon " href="tiktok.com"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
-                            <a class="ms-2 footer__content-icon " href="youtobe.com"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.facebook.com/utruck.vn" title="Facebook" target="_blank"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
+                            <a class="ms-2 footer__content-icon " href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.tiktok.com/@congdongxetai" title="tiktok" target="_blank"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
                         </li>
                     </ul>
                 </div>
@@ -576,10 +607,10 @@
     </footer>
 
     <div class="list-social-fix">
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="facebook"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="zalo"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
+        <a href="https://www.facebook.com/utruck.vn" title="facebook" target="_blank"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
+        <a href="https://www.facebook.com/messages/t/112645427543016" title="messenger" target="_blank"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
+        <a href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
     </div>
 
     <div id="backtop">

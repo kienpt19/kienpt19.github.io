@@ -30,8 +30,8 @@
                         <div class="holine-search-header d-flex px-lg-3">
                             <div class="form-search">
                                 <form action="Tim-kiem" class="d-flex" method="get">
-                                    <input type="text " name="timkiem" placeholder="Tìm kiếm...">
-                                    <button class="btn-search" type="submit">
+                                    <input type="text " name="timkiem" id="timkiem" placeholder="Tìm kiếm...">
+                                    <button class="btn-search" type="submit" onclick="timkiem()">
                                         <img src="./theme/images/Search_alt_light.png" alt="">
                                     </button>
                                 </form>
@@ -165,7 +165,7 @@
     </section>
 
 
-        <section class="container">
+        <section class="container roboto">
             <div class="cartegory-home-box section-all bg-white pb-2 wow fadeInUp roboto">
                 <p class="title-section mt-0 wow fadeInUp mb-2 mb-xxl-3">Khám phá danh mục</p>
                 <div class="position-relative">
@@ -173,7 +173,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="./ds-sanpham.html">
+                                    <a href="./ds-sanpham.html" class="shine-effect">
                                         <img src="./theme/images/xe-mới.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Xe mới</h2>
                                     </a>
@@ -181,19 +181,19 @@
                                 <div class="item-cate-home wow fadeInUp">
                                     <a href="./phutung.html">
                                         <img src="./theme/images/phụ tùng.png" alt="">
-                                        <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Phụ tùng</h2>
+                                        <h2 class="name text-center  mt-1 mt-xl-2 fs-16-cv">Phụ tùng</h2>
                                     </a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="./khampha.html">
                                         <img src="./theme/images/xe-chợ-tải.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Chợ xe tải</h2>
                                     </a>
                                 </div>
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/lốp xe tải.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Lốp xe tải</h2>
                                     </a>
@@ -201,13 +201,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/Bảo hiểm.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Bảo hiểm</h2>
                                     </a>
                                 </div>
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/dầu xe tải.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Dầu xe tải</h2>
                                     </a>
@@ -215,13 +215,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/vay vốn.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Vay vốn</h2>
                                     </a>
                                 </div>
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/phụ kiện xe tải.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Phụ kiện xe tải</h2>
                                     </a>
@@ -229,13 +229,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/vận chuyển.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Vận chuyển</h2>
                                     </a>
                                 </div>
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/u_sevices.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">u_sevices</h2>
                                     </a>
@@ -243,13 +243,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/dự án vận tải.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Dự án vận tải</h2>
                                     </a>
                                 </div>
                                 <div class="item-cate-home wow fadeInUp">
-                                    <a href="">
+                                    <a href="khampha.html">
                                         <img src="./theme/images/không xác định.png" alt="">
                                         <h2 class="name text-center mt-1 mt-xl-2 fs-16-cv">Không xác định</h2>
                                     </a>
@@ -345,7 +345,7 @@
 
     <section class="advantage-home">
         <div class="container">
-            <div class="item-advantage item-advantage-img-back d-flex section-all " style="background-image:url('https://utruck.tech5s.net/uploads/demo/group-7923.webp')">
+            <div class="item-advantage item-advantage-img-back d-flex section-all " style="background-image:url('./theme/images/group-7923.webp')">
                 <div class="content roboto">
                     <h4 class=" wow fadeInRight">U-TRUCK VIỆT NAM</h4>
                     <h3 class=" h3-all  my-2 wow fadeInRight" data-wow-delay="0.2s">Vận chuyển Logistic thời công nghệ 4.0</h3>
@@ -355,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item-advantage d-flex section-all " style="background-image:url('https://utruck.tech5s.net/uploads/demo/group-7924.webp')">
+            <div class="item-advantage d-flex section-all " style="background-image:url('./theme/images/group-7924.webp')">
                 <div class="content roboto">
                     <h4 class=" wow fadeInLeft">U-TRUCK VIỆT NAM</h4>
                     <h3 class=" h3-all my-2 wow fadeInLeft"data-wow-delay="0.2s">Chợ xe tải lớn nhất Việt Nam</h3>
@@ -455,138 +455,97 @@
                 <p class="all-title roboto">
                     <a href="#" class=" title-section "> Video sản phẩm</a>
                 </p>
-                <a href="#" class="roboto hv-main fw-bold"> xem tất cả >></a>
+                <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" class="roboto hv-main fw-bold" target="_blank"> xem tất cả >></a>
             </div>
             <div class="position-relative ">
                 <div class="formclosenotification" class="fas fa-bars"></div>
                 <div class="swiper-container slider-video-product-home ">
                     <div class="swiper-wrapper ">
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc" target="_blank">
+                                        <img src="./theme/images/vd-1.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc" target="_blank">
+                                        <img src="./theme/images/vd-2.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc"target="_blank">
+                                        <img src="./theme/images/vd-3.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc"target="_blank">
+                                        <img src="./theme/images/vd-4.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc"target="_blank">
+                                        <img src="./theme/images/vd-5.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc"target="_blank">
+                                        <img src="./theme/images/vd-6.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-videos">
+                                <div class="img position-relative">
+                                    <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc"target="_blank">
+                                        <img src="./theme/images/vd-7.webp" alt="">
+                                    </a>
+                                    <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
+                                        <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="item-videos">
-                            <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
-                                    <img src="./theme/images/Group 7925.png" alt="">
-                                </a>
-                                <h2 class="roboto text-center pt-2 ps-2 pe-2 lh-24">
-                                    <a href="">Xe Ben HOWO VX350 6x4 thùng đúc</a>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- <div class="swiper-button-next">
-                        <i class="fa-solid fa-circle-caret-right "></i>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>+ -->
                 </div>
                 <div class="slider-controls main">
                     <div class="slide-video-product-prev prev-btn">
@@ -919,9 +878,9 @@
                         <li>
                             <ul class="download-app d-flex flex-wrap justify-content-xxl-between app-info-box roboto">
                                 <li class="qr text-center">
-                                    <a href="#">
+                                    <p>
                                         <img src="./theme/images/QR.png" alt="Quét mã QR">
-                                    </a>
+                                    </p>
                                     <p class="fs-12 mt-1">hướng dẫn cài app</p>
                                 </li>
                                 <li class="list-app ms-3 ">
@@ -964,10 +923,10 @@
                     <ul class="footer__content-item">
                         <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >kết nối</h5></li>
                         <li >
-                            <a class="ms-2 footer__content-icon " href="facebook.com"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
-                            <a class="ms-2 footer__content-icon " href="zalo.com"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
-                            <a class="ms-2 footer__content-icon " href="tiktok.com"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
-                            <a class="ms-2 footer__content-icon " href="youtobe.com"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.facebook.com/utruck.vn" title="Facebook" target="_blank"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
+                            <a class="ms-2 footer__content-icon " href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.tiktok.com/@congdongxetai" title="tiktok" target="_blank"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
                         </li>
                     </ul>
                 </div>
@@ -982,10 +941,10 @@
     </footer>
 
     <div class="list-social-fix">
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="facebook"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="zalo"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
+        <a href="https://www.facebook.com/utruck.vn" title="facebook" target="_blank"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
+        <a href="https://www.facebook.com/messages/t/112645427543016" title="messenger" target="_blank"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
+        <a href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
     </div>
 
     <div id="backtop">

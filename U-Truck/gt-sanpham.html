@@ -186,7 +186,9 @@
                     </p>
                     <p class="py-3">Sản phẩm xe ben VX350 6x4 thùng đúc là sản phẩm thuộc phân khúc xe ben 3 chân được nhập khẩu nguyên chiếc từ Trung Quốc phục vụ cho nhu cầu chạy đúng tải, nhất là các tỉnh thành phía Nam Việt Nam. Xe ben VX350 6x4 thùng đúc phục vụ nhu cầu vận chuyển, khai thác, san lấp…với các loại vật liệu như cát, đá, bùn, đất…</p>
                     <div class="d-flex flex-wrap my-3 my-xl-4 text-center text-uppercase">
-                        <a class="all-btn no-border" href="1900 1089" title="Holine">1900 1089</a>
+                        <a class="all-btn no-border" href="1900 1089" title="Holine">
+                            <i class="fa-solid fa-phone fs-16"></i>
+                            1900 1089</a>
                         <a class="no-border ms-3 ms-xl-3 black-btn" href=""> 
                             <i class="fa-brands fa-teamspeak"></i>
                             Đăng kí tư vấn
@@ -252,7 +254,7 @@
           </div>
         <div class="section-all bg-white py-xl-4">
             <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-gioi-thieu-list">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-gioi-thieu-list">
                   <div class="s-content">
                         <h2>
                             <span style="font-size: 16px;">
@@ -311,7 +313,7 @@
                     </div>
                     <div class="tags align-items-center d-flex flex-wrap mb-3 mt-4 mt-xxl-5">
                         <span class="me-lg-3"> Tags:</span>
-                        <a href="" class="black-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 "> Xe Ben</a>
+                        <a href="" class="gray-btn active mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 "> Xe Ben</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Tổ chức</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Xe trộn bê tông</a>
                         <a href="" class="gray-btn mx-sm-3 mt-sm-2 m-auto mb-3 mx-md-3 my-md-2 ms-lg-3"> Phụ tùng</a>
@@ -320,13 +322,44 @@
                     <div class="d-flex flex-wrap justify-content-between border-bottom mb-3 pb-2">
                         <div class="info-rating">
                             <div class="items-rating">
-                                <span class="rating">
+                                <div id="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+                                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+                                    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+                                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+                                    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    
+                                    <input type="radio" id="starhalf" name="rating" value="half" />
+                                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </div>
+                                <!-- <span class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half"></i>
-                                </span>
+                                </span> -->
                             </div>
                             <p class="mt-2 mb-1">Đánh giá bài viết</p>
                         </div>
@@ -362,10 +395,9 @@
                             <p style="color: #1877F2;">plugin bình luận trên facebook</p>
                         </div>
                     </div>
-              </div>
-              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-thong-so-list">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloribus, ipsa voluptatum perferendis non ducimus asperiores veniam, libero dolores saepe corrupti id incidunt culpa error aut, voluptates natus sint dolorum.
-
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-thong-so-list">
+                    <p><img class="img-fluid" src="./theme/images/thong-so.webp" alt=""></p>
               </div>
               <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-images-list">
                 <p class="fs-18 robob mb-2 mb-xl-3 fw-bold"> Hình ảnh ngoại thất</p>
@@ -434,7 +466,9 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-video-list">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae amet expedita vel inventore aliquam sint corporis blanditiis labore necessitatibus. Nesciunt dolores cupiditate autem similique quia quaerat distinctio at, suscipit ut!
+                  <p class="text-center">
+                  <iframe width="100%" height="500" src="https://www.youtube.com/embed/pUP_UOHQ040" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </p>
               </div>
             </div>
         </div>
@@ -450,7 +484,7 @@
                 <p class="all-title roboto">
                     <a href="#" class=" title-section color-black"> Sản phẩm tương tự </a>
                 </p>
-                <a href="#" class="roboto text-uppercase fs-16 fw-bold"> Xem thêm >></a>
+                <a href="ds-sanpham.html" class="roboto text-uppercase fs-16 fw-bold"> Xem thêm >></a>
             </div>
             <div class="position-relative ">
                 <div class="formclosenotification" class="fas fa-bars"></div>
@@ -459,7 +493,7 @@
                     <div class="swiper-slide">
                         <div class="item-related-products">
                             <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                <a href="gt-sanpham.html">
                                     <img src="./theme/images/Rectangle 10 (1).png" alt="">
                                 </a>
                                 <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
@@ -471,7 +505,7 @@
                     <div class="swiper-slide">
                         <div class="item-related-products">
                             <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                <a href="gt-sanpham.html">
                                     <img src="./theme/images/Rectangle 10-6.png" alt="">
                                 </a>
                                 <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
@@ -483,7 +517,7 @@
                     <div class="swiper-slide">
                         <div class="item-related-products">
                             <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                <a href="gt-sanpham.html">
                                     <img src="./theme/images/Rectangle 10-1.png" alt="">
                                 </a>
                                 <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
@@ -495,7 +529,7 @@
                     <div class="swiper-slide">
                         <div class="item-related-products">
                             <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                <a href="gt-sanpham.html">
                                     <img src="./theme/images/Rectangle 10-6.png" alt="">
                                 </a>
                                 <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
@@ -507,7 +541,7 @@
                     <div class="swiper-slide">
                         <div class="item-related-products">
                             <div class="img position-relative">
-                                <a href="https://www.youtube.com/watch?v=-hxNyhm4ifc">
+                                <a href="gt-sanpham.html">
                                     <img src="./theme/images/Rectangle 10-6.png" alt="">
                                 </a>
                                 <h2 class="roboto fw-normal fs-18 text-center pt-2 ps-2 pe-2 lh-24">
@@ -550,9 +584,9 @@
                         <li>
                             <ul class="download-app d-flex flex-wrap justify-content-xxl-between app-info-box roboto">
                                 <li class="qr text-center">
-                                    <a href="#">
+                                    <p>
                                         <img src="./theme/images/QR.png" alt="Quét mã QR">
-                                    </a>
+                                    </p>
                                     <p class="fs-12 mt-1">hướng dẫn cài app</p>
                                 </li>
                                 <li class="list-app ms-3 ">
@@ -595,10 +629,10 @@
                     <ul class="footer__content-item">
                         <li><h5 class="text-uppercase mt-0 mb-4 roboto title-section fs-18 lh-24 text-left text-xl-center mb-3 mb-xl-4" >kết nối</h5></li>
                         <li >
-                            <a class="ms-2 footer__content-icon " href="facebook.com"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
-                            <a class="ms-2 footer__content-icon " href="zalo.com"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
-                            <a class="ms-2 footer__content-icon " href="tiktok.com"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
-                            <a class="ms-2 footer__content-icon " href="youtobe.com"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.facebook.com/utruck.vn" title="Facebook" target="_blank"> <img class="mt-2 " src="./theme/images/fb.png" alt="facebook"></a>
+                            <a class="ms-2 footer__content-icon " href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img class="mt-2 " src="./theme/images/zalo.png" alt="zalo"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.tiktok.com/@congdongxetai" title="tiktok" target="_blank"> <img class="mt-2 " src="./theme/images/tiktok.png" alt="tiktok"></a>
+                            <a class="ms-2 footer__content-icon " href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img class="mt-2 " src="./theme/images/ytb.png" alt="youtube"></a>
                         </li>
                     </ul>
                 </div>
@@ -613,10 +647,10 @@
     </footer>
 
     <div class="list-social-fix">
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="facebook"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
-        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="zalo"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
+        <a href="https://www.facebook.com/utruck.vn" title="facebook" target="_blank"> <img src="./theme/images/fb-fix (1).png" alt="facebook"></a>
+        <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="youtube" target="_blank"> <img src="./theme/images/ytb-fix (4).png" alt="youtube"></a>
+        <a href="https://www.facebook.com/messages/t/112645427543016" title="messenger" target="_blank"> <img src="./theme/images/mess-fix (3).png" alt="messenger"></a>
+        <a href="https://zalo.me/1858589460825490288" title="zalo" target="_blank"> <img src="./theme/images/zalo-fix (2).png" alt=""></a>
     </div>
 
     <div id="backtop">

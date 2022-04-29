@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 /* thanh cuộn */
 ::-webkit-scrollbar {
     width: 8px;
@@ -42,7 +43,7 @@ button {
 }
 
 a:hover {
-    color: #B11116;
+    color: #B11116 !important;
 }
 .color-black {
     color: #000 !important;
@@ -137,7 +138,7 @@ a:hover {
     background: #E6E7E9;
 }
 
-.black-btn {
+.black-btn, .gray-btn.active {
     position: relative;
     padding: 10px 30px;
     border-radius: 5px;
@@ -191,7 +192,7 @@ a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.gray-btn:hover, .all-btn:focus {
+.gray-btn:hover, .all-btn:focus, .gray-btn.active:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
@@ -335,6 +336,10 @@ a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
+.fw-500 {
+    font-weight: 500;
+}
+
 .pt-67 {
     padding-top: 67%;
 }
@@ -354,7 +359,19 @@ a:hover {
     padding: 5px;
 }
 
-
+.shine-effect:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+}
 
 
 /*  backtop */
@@ -423,12 +440,7 @@ a:hover {
 
 /*  nút chuyển slide */
 
-.fa-caret-left:before {
-    content: "\f0d9";
-}
-.fa-caret-right:before {
-    content: "\f0da";
-}
+
 
 .slider-controls.main .prev-btn, .slider-controls.main .next-btn {
     color: #B11116;

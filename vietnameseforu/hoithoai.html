@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hội thoại</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/css/animate.css">
+    <link rel="stylesheet" href="./theme/css/boostrap.min.css">
+    <link rel="stylesheet" href="./theme/css/reset.css">
+    <link rel="stylesheet" href="./theme/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+    <link rel="stylesheet" href="./theme/css/base.css ">
+    <link rel="stylesheet" href="./theme/css/classmate.css">
+    <link rel="stylesheet" href="./theme/css/account-manager.css">
+</head>
+<body>
+<header class="header fixed">
+    <div class="header-top cl-white d-none d-lg-block">
+        <div class="container d-flex align-items-cetner justify-content-between">
+            <div class="header-top__left d-flex align-items-center">
+                <div class="change-language">
+                    <span class="select-language">
+                        <i class="fa-solid fa-globe mr-10"></i>
+                        Ngôn ngữ
+                        <i class="fa-solid fa-angle-down ml-15"></i>
+                    </span>
+                    <div class="language-content">
+                        <a href="" class="language-item active">Tiếng Việt</a>
+                        <a href="" class="language-item">Tiếng Anh</a>
+                        <a href="" class="language-item">Tiếng Trung</a>
+                        <a href="" class="language-item">Tiếng Nhật</a>
+                    </div>
+                </div>
+                <ul class="social-network-list d-none d-lg-flex">
+                    <li><a href="http://fb.com" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com" title="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="https://instagram.com" title="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://youtube.com" title="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                    <li><a href="https://sktpe.com" title="skype">
+                        <i class="fa-brands fa-skype"></i>
+                    </a></li>
+                    <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" title="talk">
+                        <img class="social-talk" src="./theme/images/KakaoTalk_logo 1.png" alt="">
+                    </a></li>
+                </ul>
+            </div>
+            <div class="header-top__right d-flex align-items-center">
+                <a href="" class="btn btn-orange__all btn-hover mr-30 d-none d-lg-flex" title="kích hoạt khóa học">
+                    Kích hoạt khóa học
+                </a>
+                <div class="form-login-header">
+                    <a href="./dangnhap.html" title="Đăng nhập" class="login-item ml-30 d-none">
+                        <i class="fa-solid fa-user mr-10"></i>
+                        Đăng nhập
+                    </a>
+                    <a href="./dangky.html" title="Đăng ký" class="login-item ml-30 d-none">
+                        <i class="fa-solid fa-lock mr-10"></i>
+                        Đăng ký
+                    </a>
+                    <!-- sau khi đang nhập thành công -->
+                    <div class="form-account position-relative">
+                        <div class="content-account d-flex align-items-center">
+                            <span class="avatar d-block mr-10">
+                                <img src="./theme/images/default-user-icon.png" class="user avatar" alt="avatar-user">
+                            </span>
+                            <span class="name mr-10">admin</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="show-dashboard">
+                            <ul class="list-link">
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-regular fa-user"></i>
+                                        Thông tin tài khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        Khóa học của tôi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Thông tin tài khoản">
+                                        <i class="fa-solid fa-feather-pointed"></i>
+                                        Điểm
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="" class="sign-out">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top__mobile header-top d-block d-lg-none cl-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1>
+                <a href="" class="logo-mobile d-block">
+                    <img class="img-fluid" src="./theme/images/logo.png" alt="">
+                </a>
+            </h1>
+            <div class="button-header__mobile d-flex align-items-center justify-content-end">
+                <div class="change-language-mobile position-relative me-3">
+                    <span class="content">
+                        Ngôn ngữ
+                        <i class="fa-solid fa-angle-down "></i>
+                    </span>
+                    <div class="language-content-mobile">
+                        <a href="" class="language-item">Vi</a>
+                        <a href="" class="language-item">En</a>
+                        <a href="" class="language-item">Tr</a>
+                        <a href="" class="language-item">Jp</a>
+                    </div>
+                </div>
+                <div class="form-account position-relative">
+                    <div class="auth-mobile d-flex align-items-center">
+                        <span class="icon d-block mr-10">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="show-dashboard">
+                        <ul class="list-link">
+                            <li>
+                                <a href="" title="Thông tin tài khoản">
+                                    <i class="fa-regular fa-user"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="Thông tin tài khoản">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    Khóa học của tôi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="Thông tin tài khoản">
+                                    <i class="fa-solid fa-feather-pointed"></i>
+                                    Điểm
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="sign-out">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav cl-white">
+        <div class="container d-block d-lg-flex align-items-center justify-content-between">
+            <h1>
+                <a href="./index.html" title="trang chủ" class="logo-header d-none d-lg-block">
+                    <img src="./theme/images/logo.png" alt="icon">
+                </a>
+            </h1>
+            <div class="d-flex align-items-center justify-content-between justify-content-lg-end menu-mobile">
+                <!-- menu bar mobile start-->
+                <span class="show-menu d-block d-lg-none fs-24">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <!-- menu bar mobile ends -->
+                <!-- form search mobile -->
+                <form action="search" method="get" class="form-search__mobile position-relative d-block d-lg-none">
+                    <button class="btn-search" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" name="q" placeholder="Tìm kiếm..." class="form-control" value="">
+                </form>
+                <!-- btn kích hoatj khóa học -->
+                <a href="" title="Kích hoạt khoá học" class="btn btn-orange__all d-flex d-lg-none btn-active__mobile">Kích hoạt khoá học</a>
+
+                <div class="menu">
+                    <!-- logo mobile -->
+                    <a href="" title="Trang chủ" class="logo-menu-mobile d-block d-lg-none text-center mt-15 mb-10">
+                        <img src="./theme/images/logo.png" alt="logo">
+                    </a>
+                    <ul>
+                        <li class="menu-item "><a href="./index.html" >Trang chủ </a></li>
+                        <li class="menu-item "><a href="./gioithieu.html" > Về chúng tôi </a>
+                            <ul class="sub-menu ">
+                                <li class="sub-menu-item"><a href="">Giới thiệu chung</a></li>
+                                <li class="sub-menu-item"><a href="">Đội ngũ giáo viên</a></li>
+                                <li class="sub-menu-item"><a href=""> Học sinh & sinh viên</a></li>
+                            </ul>
+                            <span class="btn-dropdown-menu">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </li>
+                        <li class="menu-item active"><a href="" > Khóa học</a>
+                            <ul class="sub-menu ">
+                                <li class="sub-menu-item"><a href="">Ngữ âm</a></li>
+                                <li class="sub-menu-item"><a href="">Khám phá tiếng Việt</a></li>
+                                <li class="sub-menu-item"><a href=""> Nền tảng căn bản </a></li>
+                            </ul>
+                            <span class="btn-dropdown-menu">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </li>
+                        <li class="menu-item "><a href="" class="menu-item "> Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="over-lay"></div>
+                <div class="module-search d-none d-lg-block">
+                    <span class="btn-search ">
+                        <i class="fa-solid fa-magnifying-glass search-bar-btn"></i>
+                    </span>
+                    <form action="search" class="form-search-header d-flex align-items-center " >
+                        <input type="text" id="input-search-header" placeholder="Tìm kiếm...">
+                        <button class="btn-icon-search" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="navigation bg-e5">
+    <div class="container">
+        <ul >
+            <li class="mb-2">
+                <a href="./index.html" title="trang chủ">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="" title="Khóa học">
+                    Khóa học
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="" title="Danh mục khóa học">
+                    Danh mục khóa học
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="" title="Khám phá Việt Nam 1">
+                    Khám phá Việt Nam 1
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="" title="overview">
+                    Hội thoại
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="overview bg-e5 pb-50 ">
+    <div class="container">
+        <h2 class="title-all cl-title border-right">Hội thoại</h2>
+        
+        <div class="play-video mb-25">
+            <div class="load-video-item">
+                <video controls style="width:100%">
+                    <source src="./theme/audio/1mp4.mp4">
+                </video>
+                <i class="fa-solid fa-play"></i>
+                <!-- <img src="./theme/images/play-button.webp" alt=""> -->
+            </div>
+        </div>
+        <div class="d-block mb-3 d-md-flex align-items-center justify-content-between flex-wrap">
+            <div class="d-flex align-items-center justify-content-between justify-content-md-start mb-2 mb-md-0">
+                <p class="fs-24 fw-bold cl-title me-3"> Khám phá Việt Nam</p>
+                <span class="btn btn-border__orange  show-conversation">
+                    <img class="me-2" src="./theme/images/book-saved.png" alt="">
+                    Nội dung
+
+                </span>
+            </div>
+            <ul class="list-social-netwwork d-flex">
+                <li class="cl-90"> Share:</li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="fs-16 lh-16 mb-3">
+            Fames pulvinar est euismod id. Habitant eget sit urna, est, tellus mauris arcu congue vel. Amet,
+             cursus accumsan pulvinar a, a, neque, rhoncus gravida lectus. Id lobortis sit id consequat, 
+             ultrices tellus vestibulum non. Laoreet cras gravida ultricies nulla arcu sapien. Velit vel, pellentesque
+             porta porttitor volutpat eget faucibus et at. Id sed et augue ornare scelerisque at interdum orci sit.
+        </p>
+    </div>
+</section>
+
+<section class="slide-overview bg-e5 pb-40">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <h2 class="title-all cl-title border-right">Bài học liên quan</h2>
+            <div class="navigation-button d-flex">
+                <div class="btn-slide__overview overview-button-prev me-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="btn-slide__overview overview-button-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-container slide-lesson__overview">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item-overview">
+                      <img class="img-fluid" src="./theme/images/course-category (2).png" alt="">
+                      <div class="text">
+                          <p class="time fs-14 mb-2">05:00</p>
+                          <p class="fs-14">
+                              Kỹ sĩ cưỡi rồng 1
+                          </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-overview">
+                      <img class="img-fluid" src="./theme/images/course-category (3).png" alt="">
+                      <div class="text">
+                          <p class="time fs-14 mb-2">05:00</p>
+                          <p class="fs-14">
+                              Kỹ sĩ cưỡi rồng 1
+                          </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="item-overview">
+                      <img class="img-fluid" src="./theme/images/course-category (4).png" alt="">
+                      <div class="text">
+                          <p class="time fs-14 mb-2">05:00</p>
+                          <p class="fs-14">
+                              Kỹ sĩ cưỡi rồng 1
+                          </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+    </div>
+</section>
+<div class="line-box"></div>
+
+<section class="section-navigation__control bg-e5 ">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a href="" class="prev cl-main">
+            <span class="me-2">
+                <i class="fa-solid fa-angles-left"></i>
+            </span>
+            trở về
+        </a>
+        <a href="" class="next cl-main">
+            tiếp theo
+            <span class="ms-2">
+                <i class="fa-solid fa-angles-right"></i>
+            </span>
+        </a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top row">
+            <div class="col-12 col-lg-9 col-nav-footer">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-sm-15">
+                        <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                             về chúng tôi
+                        </p>
+                        <ul class="nav-footer">
+                            <li><a href="">
+                                Về chúng tôi
+                            </a></li>
+                            <li><a href="">
+                                Các khóa học
+                            </a></li>
+                            <li><a href="">
+                                Liên hệ
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-address-footer">
+                <p class="title-footer fs-18 cl-white fư-bold mb-25">
+                    về chúng tôi
+               </p>
+               <ul class="list-address__footer mb-15">
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <a href=""> Dolphin Plaza, 6 Nguyen Hoang, Nam Tu Liem, Hanoi, Vietnam</a>
+                    </li>
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <a href=""> vietnameseforU@gmail.com</a>
+                    </li>
+                   <li class="cl-white">
+                       <span class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <a href="tel:0942 861 228">0942 861 228</a>
+                    </li>
+               </ul>
+               <ul class="list-social__alls d-flex cl-white">
+                    <li><a href="http://fb.com" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com" title="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="https://instagram.com" title="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://youtube.com" title="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                    <li><a href="https://sktpe.com" title="skype">
+                        <i class="fa-brands fa-skype"></i>
+                    </a></li>
+                    <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" title="talk">
+                        <img class="social-talk" src="./theme/images/KakaoTalk_logo 1.png" alt="">
+                    </a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex align-items-center justify-content-between">
+            <a href="/" class="logo-footer d-none d-lg-block">
+                <img src="./theme/images/logo.png" alt="">
+            </a>
+            <div class="d-flex flex-wrap justify-content-center align-items-center justify-content-md-end cl-white">
+                <a href="" class="item">Chính sách bảo mật</a>
+                <a href="" class="item">Điều khoản dịch vụ</a>
+                <p class="item">© 2021 VietnameseforU. All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="list-social-fix">
+    <a href="tel: 1900 5984" title="holine"> <img src="./theme/images/Vector.png" alt=""></a>
+    <a href="https://www.youtube.com/channel/UC5xp8UpzXBGOC_i6-fTsk3A" title="messenger"> <img src="./theme/images/image 575.png" alt=""></a>
+    <a href="" title="zalo"> <img src="./theme/images/image 576.png" alt=""></a>
+</div>
+
+<div id="backtop">
+        <img src="./theme/images/backup.png" alt="">
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./theme/js/jquery-3.4.1.min.js"></script>
+    <script src="./theme/js/swiper-bundle.min.js"></script>
+    <script src="./theme/js/wow.min.js"></script>
+    <script src="./theme/js/script.js"></script>
+</body>
+</html>

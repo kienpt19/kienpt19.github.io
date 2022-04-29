@@ -446,7 +446,12 @@
     margin-bottom: 12px;
 }
 .footer-list li:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-list li a {
+    font-size: 14px;
+    color: #454545;
 }
 
 .footer__content-item .footer__content-icon img {
@@ -740,6 +745,9 @@
 
 #toc_container ul li {
     color: #B11116;
+}
+#toc_container ul li:not(:last-child) {
+    margin-bottom: 16px;
 }
 #toc_container ul li:hover {
     color: #B11116;
@@ -1093,7 +1101,7 @@
     display: flex;
     margin: auto;
     border-radius: 10px;
-    padding: 30px;
+    padding: 40px 24px;
 }
 
 .form-login.active {
@@ -1118,14 +1126,14 @@
 }
 
 .box-introduce-vision {
-    background-image: url(https://utruck.tech5s.net/theme/frontend/images/bg_visson.jpg);
+    background-image: url(../images/bg_visson.jpg);
     background-position: right bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .box-introduce-mission {
-    background-image: url(https://utruck.tech5s.net/theme/frontend/images/bg_mission.jpg);
+    background-image: url(../images/bg_mission.jpg);
     background-position: left bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1289,4 +1297,21 @@
     width: 48%;
 }
 
+
+/*  đánh giá sao  */
+/****** Style Star Rating Widget *****/
+#rating{border:none;float:left;margin-bottom: 15px;}
+#rating>input{display:none;}/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before{margin:5px;font-size:1.25em;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating>label{color:#ddd;float:right;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover, 
+#rating:not(:checked)>label:hover~label{color:#FFD700;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label{color:#FFED85;}
 
